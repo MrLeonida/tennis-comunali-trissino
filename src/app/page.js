@@ -441,7 +441,7 @@ export default function Example() {
               I nostri spazi, il tuo divertimento
             </h1>
             <p className="mt-6 text-lg text-slate-900 font-bold">
-              Immerso nella natura, costeggiato dal Sile, a pochi passi dal centro di Treviso. Un'area dedicata alle attività sportive e culturali.
+              Immerso nella natura, costeggiato dal Sile, a pochi passi dal centro di Treviso. Un&apos;area dedicata alle attività sportive e culturali.
             </p>
             <div className="mt-10 flex items-center justify-center">
               <a
@@ -449,7 +449,7 @@ export default function Example() {
                 className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-semibold text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 <FontAwesomeIcon icon={faUserGroup} className="fa-sm mr-1.5" />
-                Scopri l'associazione
+                Scopri l&apos;associazione
               </a>
             </div>
           </div>
@@ -519,7 +519,7 @@ export default function Example() {
             <div className="w-full flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-lime-500 sm:text-4xl">Treviso Tennis Team</h2>
               <p className="mt-6 text-lg leading-8 text-slate-200">
-                I nostri maestri saranno felici di indicarti l'opzione più adatta alle tue esigenze. Che tu sia un futuro agonista oppure pronto a divertirti in campo, prenota la tua lezione di prova.
+                I nostri maestri saranno felici di indicarti l&apos;opzione più adatta alle tue esigenze. Che tu sia un futuro agonista oppure pronto a divertirti in campo, prenota la tua lezione di prova.
               </p>
               <ul
                 role="list"
@@ -538,7 +538,7 @@ export default function Example() {
                 className="rounded-md bg-lime-500 px-4 py-3.5 text-sm font-semibold text-slate-900 shadow-sm hover:bg-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 <FontAwesomeIcon icon={faRacquet} className="fa-sm mr-1.5" />
-                Visita l'academy
+                Visita l&apos;academy
               </a>
             </div>
             </div>
