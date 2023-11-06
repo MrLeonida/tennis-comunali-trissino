@@ -14,7 +14,9 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBells, faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faArrowRight, faUserGroup, faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent, faPaperPlane } from '@fortawesome/pro-solid-svg-icons'
+import { faBells, faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faArrowRight, faUserGroup, faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent, faPaperPlane, faCalendarPlus } from '@fortawesome/pro-solid-svg-icons'
+import { faAppStoreIos, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+
 
 const products = [
   { name: 'Tennis', description: 'Scendi in campo con Treviso Tennis Team', href: '#', icon: faTennisBall },
@@ -31,6 +33,10 @@ const company = [
   { name: 'Nazionale', href: 'https://nazionale.dlf.it/' },
   { name: 'News', href: '#' },
   { name: 'Contatti', href: '#' },
+]
+const app = [
+  { name: 'App Store', href: 'https://apps.apple.com/it/app/wansport/id6445919117' },
+  { name: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.wansport.community' },
 ]
 const posts = [
   {
@@ -176,6 +182,7 @@ const navigation = {
     },
   ],
 }
+const iOSUrl = 'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -307,10 +314,27 @@ export default function Example() {
 
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Prenota
-            <FontAwesomeIcon icon={faArrowRight} className="ml-1.5 text-slate-400" />
-          </a>
+
+          <Popover.Group>
+            <Popover className="relative">
+              <Popover.Button className="flex items-center gap-x-1.5 text-sm font-semibold leading-6 text-slate-900">
+                Prenota con l&apos;app
+                <FontAwesomeIcon icon={faChevronDown} className="fa-sm text-slate-400" />
+              </Popover.Button>
+              <Popover.Panel className="absolute right-0 top-full z-10 mt-3 w-56 rounded-xl bg-slate-50 p-2 shadow-lg ring-1 ring-gray-900/5">
+                {app.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-slate-900 hover:bg-slate-200"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </Popover.Panel>
+            </Popover>
+          </Popover.Group>
+
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -403,14 +427,32 @@ export default function Example() {
 
                 
               </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Prenota
-                </a>
-              </div>
+
+              <Disclosure as="div" className="-mx-3 py-6">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        Prenota con l&apos;app
+                        <ChevronDownIcon
+                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {app.map((item) => (
+                          <Disclosure.Button
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
             </div>
           </div>
         </Dialog.Panel>
@@ -437,20 +479,31 @@ export default function Example() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-slate-50 sm:text-6xl">
+            <h1 className="text-4xl font-bold text-slate-50 sm:text-6xl mx-5 md:mx-0">
               I nostri spazi, il tuo divertimento
             </h1>
-            <p className="mt-6 text-lg text-slate-900 font-bold">
-              Immerso nella natura, costeggiato dal Sile, a pochi passi dal centro di Treviso. Un&apos;area dedicata alle attività sportive e culturali.
+            <p className="mt-6 text-md bg-slate-200/75 text-slate-900 font-light p-3.5 rounded-md mx-5 md:mx-0 sm:text-lg">
+              Immerso nella natura, costeggiato dal Sile, a due passi da Treviso. Scarica l&apos;applicazione WanSports per prenotare la tua prossima partita!
             </p>
-            <div className="mt-10 flex items-center justify-center">
-              <a
-                href="#"
-                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-semibold text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faUserGroup} className="fa-sm mr-1.5" />
-                Scopri l&apos;associazione
-              </a>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-3.5 mx-5 md:mx-0">
+              <div className="inline-flex">
+                <a
+                  href="https://apps.apple.com/it/app/wansport/id6445919117"
+                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                >
+                  <FontAwesomeIcon icon={faAppStoreIos} className="mr-1.5" />
+                  Scarica da Apple Store
+                </a>
+              </div>
+              <div className="inline-flex">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.wansport.community"
+                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                >
+                  <FontAwesomeIcon icon={faGooglePlay} className="mr-1.5" />
+                  Scarica da Google Play
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -535,9 +588,9 @@ export default function Example() {
               <div className="mt-10 flex items-center">
               <a
                 href="#"
-                className="rounded-md bg-lime-500 px-4 py-3.5 text-sm font-semibold text-slate-900 shadow-sm hover:bg-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-lime-500 px-4 py-3.5 text-sm font-regular text-slate-900 shadow-sm hover:bg-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
-                <FontAwesomeIcon icon={faRacquet} className="fa-sm mr-1.5" />
+                <FontAwesomeIcon icon={faRacquet} className="mr-1.5" />
                 Visita l&apos;academy
               </a>
             </div>
@@ -571,9 +624,9 @@ export default function Example() {
           <div className="mt-10 flex items-center">
               <a
                 href="#"
-                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-semibold text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
-                <FontAwesomeIcon icon={faBadgePercent} className="fa-sm mr-1.5" />
+                <FontAwesomeIcon icon={faBadgePercent} className="mr-1.5" />
                 Guardale tutte
               </a>
             </div>
@@ -641,9 +694,9 @@ export default function Example() {
           <div className="flex items-center">
               <a
                 href="#"
-                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-semibold text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
-                <FontAwesomeIcon icon={faPaperPlane} className="fa-sm mr-1.5" />
+                <FontAwesomeIcon icon={faPaperPlane} className="mr-1.5" />
                 Iscriviti
               </a>
             </div>
@@ -660,7 +713,7 @@ export default function Example() {
     </div>
 
 
-    <footer className="bg-slate-50">
+    <footer className="bg-slate-200">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
           {navigation.main.map((item) => (
@@ -680,7 +733,7 @@ export default function Example() {
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2023 Associazione DLF Treviso-Belluno. Tutti i diritti sono riservati.
+          &copy; 2023 Associazione DLF Treviso-Belluno.<br />Via Giuseppe Benzi, 86 - 31100 Treviso (TV)<br />Tel. +39 0422 401540<br />Tutti i diritti sono riservati.
         </p>
       </div>
     </footer>
