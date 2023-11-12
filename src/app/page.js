@@ -570,7 +570,7 @@ export default function Example() {
               alt=""
             />
             <div className="w-full flex-auto">
-              <h2 className="text-3xl font-bold tracking-tight text-lime-500 sm:text-4xl">Treviso Tennis Team</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-lime-500 sm:text-4xl">Tennis</h2>
               <p className="mt-6 text-lg leading-8 text-slate-200">
                 I nostri maestri saranno felici di indicarti l&apos;opzione più adatta alle tue esigenze. Che tu sia un futuro agonista oppure pronto a divertirti in campo, prenota la tua lezione di prova.
               </p>
