@@ -16,7 +16,6 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBells, faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faArrowRight, faUserGroup, faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent, faPaperPlane, faCalendarPlus } from '@fortawesome/pro-solid-svg-icons'
 import { faAppStoreIos, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import Link from 'next/link';
 
 
 const products = [
@@ -186,6 +185,65 @@ const navigation = {
 }
 const iOSUrl = 'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
 
+const timeline = [
+  {
+    name: 'Founded company',
+    description:
+      'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
+    date: 'Aug 2021',
+    dateTime: '2021-08',
+  },
+  {
+    name: 'Secured $65m in funding',
+    description:
+      'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
+    date: 'Dec 2021',
+    dateTime: '2021-12',
+  },
+  {
+    name: 'Released beta',
+    description:
+      'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
+    date: 'Feb 2022',
+    dateTime: '2022-02',
+  },
+  {
+    name: 'Global launch of product',
+    description:
+      'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
+    date: 'Dec 2022',
+    dateTime: '2022-12',
+  },
+]
+
+const people = [
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  }
+]
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -194,7 +252,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-slate-50">
     
     <div className="flex items-center justify-center gap-x-6 bg-teal-800 px-6 py-2.5 sm:px-3.5">
       <p className="text-sm leading-6 text-white">
@@ -240,13 +298,13 @@ export default function Example() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-slate-50 p-2 shadow-lg ring-1 ring-gray-900/5">
                 {company.map((item) => (
-                  <Link
+                  <a
                     key={item.name}
                     href={item.href}
                     className="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-slate-900 hover:bg-slate-200"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 ))}
               </Popover.Panel>
             </Transition>
@@ -461,218 +519,170 @@ export default function Example() {
       </Dialog>
     </header>
 
-      <div className="relative isolate overflow-hidden pt-14">
-        <img
-          src="/hero-image-min.jpg"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-        />
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
+    <main className="isolate bg-slate-50">
+        {/* Hero section */}
+        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
           <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
+            className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
+            aria-hidden="true"
           />
-        </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-slate-50 sm:text-6xl mx-5 md:mx-0">
-              I nostri spazi, il tuo divertimento
-            </h1>
-            <p className="mt-6 text-md bg-slate-200/75 text-slate-900 font-light p-3.5 rounded-md mx-5 md:mx-0 sm:text-lg">
-              Immerso nella natura, costeggiato dal Sile, a due passi da Treviso. Scarica l&apos;applicazione WanSports per prenotare la tua prossima partita!
-            </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-3.5 mx-5 md:mx-0">
-              <div className="inline-flex">
-                <a
-                  href="https://apps.apple.com/it/app/wansport/id6445919117"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faAppStoreIos} className="mr-1.5" />
-                  Scarica da Apple Store
-                </a>
+          <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+              <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
+                We’re a passionate group of people working from around the world to build the future of ecommerce.
+              </h1>
+              <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+                <p className="text-lg leading-8 text-gray-600">
+                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
+                  amet fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui
+                  irure qui lorem cupidatat commodo.
+                </p>
               </div>
-              <div className="inline-flex">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.wansport.community"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faGooglePlay} className="mr-1.5" />
-                  Scarica da Google Play
-                </a>
-              </div>
+              <img
+                src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
+                alt=""
+                className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+              />
             </div>
           </div>
+          <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-slate-50 sm:h-32" />
         </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
-        </div>
-      </div>
 
-
-      <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Una vasta scelta di attività</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-            Sport, turismo, cultura, turismo...e tu quale scegli?
-          </p>
-        </div>
-        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-4">
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-56 sm:pt-40 lg:pt-56"
-            >
-              <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
-              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-              <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
-              <div className="flex flex-wrap items-center gap-x-2.5 overflow-hidden text-sm leading-6 text-gray-300">
-                <div className={post.classes}>
-                  <FontAwesomeIcon icon={post.icon} className="h-6 w-6 text-slate-50 fa-lg" aria-hidden="true" />
-                </div>
-                <div className="text-lg font-bold text-slate-50">
-                {post.title}
-                </div>
-              </div>
-              <h3 className="mt-3 text-sm font-light leading-6 text-slate-50">
-                <a href={post.href}>
-                {post.description}
-                </a>
-              </h3>
-            </article>
-          ))}
-        </div>
-      </div>
-    </div>
-
-
-    <div className="bg-gray-900 py-24 sm:py-32">
-      <div className="relative isolate">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-            <img
-              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-              src="/team-min.jpg"
-              alt=""
-            />
-            <div className="w-full flex-auto">
-              <h2 className="text-3xl font-bold tracking-tight text-lime-500 sm:text-4xl">Tennis</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-200">
-                I nostri maestri saranno felici di indicarti l&apos;opzione più adatta alle tue esigenze. Che tu sia un futuro agonista oppure pronto a divertirti in campo, prenota la tua lezione di prova.
-              </p>
-              <ul
-                role="list"
-                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-slate-50 sm:grid-cols-2"
-              >
-                {benefits.map((benefit) => (
-                  <li key={benefit} className="flex gap-x-3 items-center">
-                    <FontAwesomeIcon icon={faCircleCheck} className="fa-sm" />
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-lime-500 px-4 py-3.5 text-sm font-regular text-slate-900 shadow-sm hover:bg-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faRacquet} className="mr-1.5" />
-                Visita l&apos;academy
-              </a>
-            </div>
-            </div>
-          </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-white/5 p-8">
-                <dt className="text-sm font-semibold leading-6 text-slate-200">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-slate-50">{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-        <div
-          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
-          aria-hidden="true"
-        >
-        </div>
-      </div>
-    </div>
-
-
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Approfitta dei vantaggi</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-          Richiedi la tua tessera DLF: con soli 12€ all’anno potrai accedere ad una vasta gamma di convenzioni dedicate, esperienze indimenticabili e vantaggi unici.
-          </p>
-          <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faBadgePercent} className="mr-1.5" />
-                Guardale tutte
-              </a>
-            </div>
-          <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-            {offers.map((offers) => (
-              <article key={offers.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
-                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                  <img
-                    src={offers.image}
-                    alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+        {/* Timeline section */}
+        <div className="mx-auto -mt-8 max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">
+            {timeline.map((item) => (
+              <div key={item.name}>
+                <time
+                  dateTime={item.dateTime}
+                  className="flex items-center text-sm font-semibold leading-6 text-indigo-600"
+                >
+                  <svg viewBox="0 0 4 4" className="mr-4 h-1 w-1 flex-none" aria-hidden="true">
+                    <circle cx={2} cy={2} r={2} fill="currentColor" />
+                  </svg>
+                  {item.date}
+                  <div
+                    className="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0"
+                    aria-hidden="true"
                   />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <a
-                      href={offers.category.href}
-                      className={offers.classes}
-                    >
-                      {offers.category.category}
-                    </a>
-                  </div>
-                  <div className="group relative max-w-xl">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-900 group-hover:text-slate-600">
-                      <a href={offers.href}>
-                        <span className="absolute inset-0" />
-                        {offers.title}
-                      </a>
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">{offers.description}</p>
-                  </div>
-                  <div className="mt-3 relative">
-                      <img src={offers.logo} alt="" className="h-10" />
-                    </div>
-                </div>
-              </article>
+                </time>
+                <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{item.name}</p>
+                <p className="mt-1 text-base leading-7 text-gray-600">{item.description}</p>
+              </div>
             ))}
           </div>
+        </div>
+
+        <div className="bg-white py-24 sm:py-32 mt-24 sm:mt-32">
+      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
+            suspendisse.
+          </p>
+        </div>
+        <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+          {people.map((person) => (
+            <li key={person.name}>
+              <div className="flex items-center gap-x-6">
+                <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                <div>
+                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                  <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+    
+        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              We approach the workplace as something that adds to our lives and adds value to world.
+            </h2>
+            <p className="mt-6 text-base leading-7 text-gray-600">
+              Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu.
+              Cras purus nibh cursus sit eu in id. Integer vel nibh.
+            </p>
+          </div>
+          <div className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
+            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-50 p-8 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:w-72 lg:max-w-none lg:flex-none lg:flex-col lg:items-start">
+              <p className="flex-none text-3xl font-bold tracking-tight text-gray-900">250k</p>
+              <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
+                <p className="text-lg font-semibold tracking-tight text-gray-900">Users on the platform</p>
+                <p className="mt-2 text-base leading-7 text-gray-600">
+                  Vel labore deleniti veniam consequuntur sunt nobis.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-gray-900 p-8 sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-sm lg:flex-auto lg:flex-col lg:items-start lg:gap-y-44">
+              <p className="flex-none text-3xl font-bold tracking-tight text-white">$8.9 billion</p>
+              <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
+                <p className="text-lg font-semibold tracking-tight text-white">
+                  We’re proud that our customers have made over $8 billion in total revenue.
+                </p>
+                <p className="mt-2 text-base leading-7 text-gray-400">
+                  Eu duis porta aliquam ornare. Elementum eget magna egestas.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-indigo-600 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
+              <p className="flex-none text-3xl font-bold tracking-tight text-white">401,093</p>
+              <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
+                <p className="text-lg font-semibold tracking-tight text-white">Transactions this year</p>
+                <p className="mt-2 text-base leading-7 text-indigo-200">
+                  Eu duis porta aliquam ornare. Elementum eget magna egestas. Eu duis porta aliquam ornare.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+
+
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+          <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Boost your productivity today.
+          </h2>
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
+            commodo do ea.
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="#"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Get started
+            </a>
+            <a href="#" className="text-sm font-semibold leading-6 text-white">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <svg
+            viewBox="0 0 1024 1024"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            aria-hidden="true"
+          >
+            <circle cx={512} cy={512} r={512} fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fillOpacity="0.7" />
+            <defs>
+              <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
         </div>
       </div>
     </div>
 
 
+    </main>
 
     <div className="bg-slate-200 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">

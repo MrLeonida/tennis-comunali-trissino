@@ -11,12 +11,12 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
   CheckCircleIcon,
+  PlusSmallIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBells, faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faArrowRight, faUserGroup, faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent, faPaperPlane, faCalendarPlus } from '@fortawesome/pro-solid-svg-icons'
 import { faAppStoreIos, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import Link from 'next/link';
 
 
 const products = [
@@ -85,12 +85,6 @@ const benefits = [
   'Corsi di perfezionamento',
   'Lezioni individuali o di gruppo',
   'Allenamenti squadre agonisti',
-]
-const stats = [
-  { id: 1, name: 'Campi da gioco', value: '5' },
-  { id: 2, name: 'Iscritti scuola tennis', value: '100+' },
-  { id: 3, name: 'Tesserati agonisti', value: '50+' },
-  { id: 4, name: 'Squadre agonistiche', value: '4' },
 ]
 const offers = [
   {
@@ -186,6 +180,173 @@ const navigation = {
 }
 const iOSUrl = 'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
 
+const timeline = [
+  {
+    name: 'Founded company',
+    description:
+      'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
+    date: 'Aug 2021',
+    dateTime: '2021-08',
+  },
+  {
+    name: 'Secured $65m in funding',
+    description:
+      'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
+    date: 'Dec 2021',
+    dateTime: '2021-12',
+  },
+  {
+    name: 'Released beta',
+    description:
+      'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
+    date: 'Feb 2022',
+    dateTime: '2022-02',
+  },
+  {
+    name: 'Global launch of product',
+    description:
+      'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
+    date: 'Dec 2022',
+    dateTime: '2022-12',
+  },
+]
+
+const people = [
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  }
+]
+
+const stats = [
+  { label: 'Founded', value: '2021' },
+  { label: 'Employees', value: '37' },
+  { label: 'Countries', value: '12' },
+  { label: 'Raised', value: '$25M' },
+]
+
+const features = [
+  {
+    name: 'Push to deploy',
+    description:
+      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+    href: '#',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'SSL certificates',
+    description:
+      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+    href: '#',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Simple queues',
+    description:
+      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+    href: '#',
+    icon: ArrowPathIcon,
+  },
+]
+
+const tiers = [
+  {
+    name: 'Basic',
+    id: 'tier-basic',
+    href: '#',
+    price: { monthly: '$15', annually: '$12' },
+    description: 'Everything necessary to get started.',
+    features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
+  },
+  {
+    name: 'Essential',
+    id: 'tier-essential',
+    href: '#',
+    price: { monthly: '$30', annually: '$24' },
+    description: 'Everything in Basic, plus essential tools for growing your business.',
+    features: [
+      '25 products',
+      'Up to 10,000 subscribers',
+      'Advanced analytics',
+      '24-hour support response time',
+      'Marketing automations',
+    ],
+  },
+  {
+    name: 'Growth',
+    id: 'tier-growth',
+    href: '#',
+    price: { monthly: '$60', annually: '$48' },
+    description: 'Everything in Essential, plus collaboration tools and deeper insights.',
+    features: [
+      'Unlimited products',
+      'Unlimited subscribers',
+      'Advanced analytics',
+      '1-hour, dedicated support response time',
+      'Marketing automations',
+      'Custom reporting tools',
+    ],
+  },
+]
+
+const faqs = [
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  },
+  {
+    question: "What's the best thing about Switzerland?",
+    answer:
+      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+  }
+]
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -194,7 +355,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-slate-50">
     
     <div className="flex items-center justify-center gap-x-6 bg-teal-800 px-6 py-2.5 sm:px-3.5">
       <p className="text-sm leading-6 text-white">
@@ -240,13 +401,13 @@ export default function Example() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-slate-50 p-2 shadow-lg ring-1 ring-gray-900/5">
                 {company.map((item) => (
-                  <Link
+                  <a
                     key={item.name}
                     href={item.href}
                     className="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-slate-900 hover:bg-slate-200"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 ))}
               </Popover.Panel>
             </Transition>
@@ -461,211 +622,123 @@ export default function Example() {
       </Dialog>
     </header>
 
-      <div className="relative isolate overflow-hidden pt-14">
-        <img
-          src="/hero-image-min.jpg"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-        />
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
-        </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-slate-50 sm:text-6xl mx-5 md:mx-0">
-              I nostri spazi, il tuo divertimento
-            </h1>
-            <p className="mt-6 text-md bg-slate-200/75 text-slate-900 font-light p-3.5 rounded-md mx-5 md:mx-0 sm:text-lg">
-              Immerso nella natura, costeggiato dal Sile, a due passi da Treviso. Scarica l&apos;applicazione WanSports per prenotare la tua prossima partita!
-            </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-3.5 mx-5 md:mx-0">
-              <div className="inline-flex">
-                <a
-                  href="https://apps.apple.com/it/app/wansport/id6445919117"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faAppStoreIos} className="mr-1.5" />
-                  Scarica da Apple Store
-                </a>
-              </div>
-              <div className="inline-flex">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.wansport.community"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faGooglePlay} className="mr-1.5" />
-                  Scarica da Google Play
-                </a>
+    <main className="isolate bg-slate-50">
+
+    
+    <div className="bg-white">
+
+      <div className="relative">
+        <div className="mx-auto max-w-7xl">
+          <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
+            <svg
+              className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-white lg:block"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <polygon points="0,0 90,0 50,100 0,100" />
+            </svg>
+
+            <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  Data to enrich your online business
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
+                  amet fugiat veniam occaecat fugiat aliqua.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
+        <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <img
+            className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+            alt=""
           />
-        </div>
-      </div>
-
-
-      <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Una vasta scelta di attività</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-            Sport, turismo, cultura, turismo...e tu quale scegli?
-          </p>
-        </div>
-        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-4">
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-56 sm:pt-40 lg:pt-56"
-            >
-              <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
-              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-              <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
-              <div className="flex flex-wrap items-center gap-x-2.5 overflow-hidden text-sm leading-6 text-gray-300">
-                <div className={post.classes}>
-                  <FontAwesomeIcon icon={post.icon} className="h-6 w-6 text-slate-50 fa-lg" aria-hidden="true" />
-                </div>
-                <div className="text-lg font-bold text-slate-50">
-                {post.title}
-                </div>
-              </div>
-              <h3 className="mt-3 text-sm font-light leading-6 text-slate-50">
-                <a href={post.href}>
-                {post.description}
-                </a>
-              </h3>
-            </article>
-          ))}
         </div>
       </div>
     </div>
 
-
-    <div className="bg-gray-900 py-24 sm:py-32">
-      <div className="relative isolate">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-            <img
-              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-              src="/team-min.jpg"
-              alt=""
-            />
-            <div className="w-full flex-auto">
-              <h2 className="text-3xl font-bold tracking-tight text-lime-500 sm:text-4xl">Tennis</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-200">
-                I nostri maestri saranno felici di indicarti l&apos;opzione più adatta alle tue esigenze. Che tu sia un futuro agonista oppure pronto a divertirti in campo, prenota la tua lezione di prova.
-              </p>
-              <ul
-                role="list"
-                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-slate-50 sm:grid-cols-2"
-              >
-                {benefits.map((benefit) => (
-                  <li key={benefit} className="flex gap-x-3 items-center">
-                    <FontAwesomeIcon icon={faCircleCheck} className="fa-sm" />
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-lime-500 px-4 py-3.5 text-sm font-regular text-slate-900 shadow-sm hover:bg-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faRacquet} className="mr-1.5" />
-                Visita l&apos;academy
-              </a>
-            </div>
-            </div>
-          </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-white/5 p-8">
-                <dt className="text-sm font-semibold leading-6 text-slate-200">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-slate-50">{stat.value}</dd>
+    <div className="pt-24 sm:pt-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Everything you need to deploy your app
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
+            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+            {features.map((feature) => (
+              <div key={feature.name} className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <feature.icon className="h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                  {feature.name}
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                  <p className="flex-auto">{feature.description}</p>
+                  <p className="mt-6">
+                    <a href={feature.href} className="text-sm font-semibold leading-6 text-indigo-600">
+                      Learn more <span aria-hidden="true">→</span>
+                    </a>
+                  </p>
+                </dd>
               </div>
             ))}
           </dl>
         </div>
-        <div
-          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
-          aria-hidden="true"
-        >
-        </div>
       </div>
     </div>
 
 
-    <div className="bg-white py-24 sm:py-32">
+    <div className="pt-24 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Approfitta dei vantaggi</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-          Richiedi la tua tessera DLF: con soli 12€ all’anno potrai accedere ad una vasta gamma di convenzioni dedicate, esperienze indimenticabili e vantaggi unici.
+        <div className="mx-auto max-w-4xl sm:text-center">
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+          <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Choose the right plan for&nbsp;you
           </p>
-          <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faBadgePercent} className="mr-1.5" />
-                Guardale tutte
-              </a>
-            </div>
-          <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-            {offers.map((offers) => (
-              <article key={offers.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
-                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                  <img
-                    src={offers.image}
-                    alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
-                  />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <a
-                      href={offers.category.href}
-                      className={offers.classes}
-                    >
-                      {offers.category.category}
-                    </a>
-                  </div>
-                  <div className="group relative max-w-xl">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-900 group-hover:text-slate-600">
-                      <a href={offers.href}>
-                        <span className="absolute inset-0" />
-                        {offers.title}
-                      </a>
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">{offers.description}</p>
-                  </div>
-                  <div className="mt-3 relative">
-                      <img src={offers.logo} alt="" className="h-10" />
-                    </div>
-                </div>
-              </article>
+        </div>
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center">
+          Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in.
+          Explicabo id ut laborum.
+        </p>
+        <div className="mt-20 flow-root">
+          <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
+            {tiers.map((tier) => (
+              <div key={tier.id} className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
+                <h3 id={tier.id} className="text-base font-semibold leading-7 text-gray-900">
+                  {tier.name}
+                </h3>
+                <p className="mt-6 flex items-baseline gap-x-1">
+                  <span className="text-5xl font-bold tracking-tight text-gray-900">{tier.price.monthly}</span>
+                  <span className="text-sm font-semibold leading-6 text-gray-600">/month</span>
+                </p>
+                <p className="mt-3 text-sm leading-6 text-gray-500">{tier.price.annually} per month if paid annually</p>
+                <a
+                  href={tier.href}
+                  aria-describedby={tier.id}
+                  className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Buy plan
+                </a>
+                <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">{tier.description}</p>
+                <ul role="list" className="mt-6 space-y-3 text-sm leading-6 text-gray-600">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex gap-x-3">
+                      <CheckCircleIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
@@ -673,6 +746,77 @@ export default function Example() {
     </div>
 
 
+    <div>
+      <div className="mx-auto max-w-7xl px-6 pt-24 sm:pt-32 lg:px-8 lg:py-40">
+        <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+          <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+          <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+            {faqs.map((faq) => (
+              <Disclosure as="div" key={faq.question} className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                        <span className="text-base font-semibold leading-7">{faq.question}</span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusSmallIcon className="h-6 w-6" aria-hidden="true" />
+                          ) : (
+                            <PlusSmallIcon className="h-6 w-6" aria-hidden="true" />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-gray-600">{faq.answer}</p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </div>
+
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+          <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Boost your productivity today.
+          </h2>
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur
+            commodo do ea.
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="#"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Get started
+            </a>
+            <a href="#" className="text-sm font-semibold leading-6 text-white">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <svg
+            viewBox="0 0 1024 1024"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            aria-hidden="true"
+          >
+            <circle cx={512} cy={512} r={512} fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fillOpacity="0.7" />
+            <defs>
+              <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+
+    </main>
 
     <div className="bg-slate-200 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">

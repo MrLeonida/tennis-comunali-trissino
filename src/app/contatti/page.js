@@ -12,11 +12,10 @@ import {
   XMarkIcon,
   CheckCircleIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, BuildingOffice2Icon, EnvelopeIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBells, faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faArrowRight, faUserGroup, faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent, faPaperPlane, faCalendarPlus } from '@fortawesome/pro-solid-svg-icons'
 import { faAppStoreIos, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import Link from 'next/link';
 
 
 const products = [
@@ -186,6 +185,38 @@ const navigation = {
 }
 const iOSUrl = 'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
 
+const timeline = [
+  {
+    name: 'Founded company',
+    description:
+      'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
+    date: 'Aug 2021',
+    dateTime: '2021-08',
+  },
+  {
+    name: 'Secured $65m in funding',
+    description:
+      'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
+    date: 'Dec 2021',
+    dateTime: '2021-12',
+  },
+  {
+    name: 'Released beta',
+    description:
+      'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
+    date: 'Feb 2022',
+    dateTime: '2022-02',
+  },
+  {
+    name: 'Global launch of product',
+    description:
+      'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
+    date: 'Dec 2022',
+    dateTime: '2022-12',
+  },
+]
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -194,7 +225,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-slate-50">
     
     <div className="flex items-center justify-center gap-x-6 bg-teal-800 px-6 py-2.5 sm:px-3.5">
       <p className="text-sm leading-6 text-white">
@@ -240,13 +271,13 @@ export default function Example() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-slate-50 p-2 shadow-lg ring-1 ring-gray-900/5">
                 {company.map((item) => (
-                  <Link
+                  <a
                     key={item.name}
                     href={item.href}
                     className="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-slate-900 hover:bg-slate-200"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 ))}
               </Popover.Panel>
             </Transition>
@@ -461,218 +492,190 @@ export default function Example() {
       </Dialog>
     </header>
 
-      <div className="relative isolate overflow-hidden pt-14">
-        <img
-          src="/hero-image-min.jpg"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-        />
-        <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
-        </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-slate-50 sm:text-6xl mx-5 md:mx-0">
-              I nostri spazi, il tuo divertimento
+    <main className="isolate bg-slate-50">
+
+    <div className="relative bg-white">
+      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+        <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
+              Data to enrich your online business
             </h1>
-            <p className="mt-6 text-md bg-slate-200/75 text-slate-900 font-light p-3.5 rounded-md mx-5 md:mx-0 sm:text-lg">
-              Immerso nella natura, costeggiato dal Sile, a due passi da Treviso. Scarica l&apos;applicazione WanSports per prenotare la tua prossima partita!
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+              fugiat veniam occaecat fugiat aliqua.
             </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-3.5 mx-5 md:mx-0">
-              <div className="inline-flex">
-                <a
-                  href="https://apps.apple.com/it/app/wansport/id6445919117"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faAppStoreIos} className="mr-1.5" />
-                  Scarica da Apple Store
-                </a>
-              </div>
-              <div className="inline-flex">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.wansport.community"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faGooglePlay} className="mr-1.5" />
-                  Scarica da Google Play
-                </a>
-              </div>
-            </div>
           </div>
         </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
+        <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+          <img
+            className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+            src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2102&q=80"
+            alt=""
           />
         </div>
       </div>
-
-
-      <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Una vasta scelta di attività</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-            Sport, turismo, cultura, turismo...e tu quale scegli?
-          </p>
-        </div>
-        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-4">
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-56 sm:pt-40 lg:pt-56"
-            >
-              <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
-              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-              <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
-              <div className="flex flex-wrap items-center gap-x-2.5 overflow-hidden text-sm leading-6 text-gray-300">
-                <div className={post.classes}>
-                  <FontAwesomeIcon icon={post.icon} className="h-6 w-6 text-slate-50 fa-lg" aria-hidden="true" />
-                </div>
-                <div className="text-lg font-bold text-slate-50">
-                {post.title}
-                </div>
-              </div>
-              <h3 className="mt-3 text-sm font-light leading-6 text-slate-50">
-                <a href={post.href}>
-                {post.description}
-                </a>
-              </h3>
-            </article>
-          ))}
-        </div>
-      </div>
     </div>
 
 
-    <div className="bg-gray-900 py-24 sm:py-32">
-      <div className="relative isolate">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-            <img
-              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-              src="/team-min.jpg"
-              alt=""
-            />
-            <div className="w-full flex-auto">
-              <h2 className="text-3xl font-bold tracking-tight text-lime-500 sm:text-4xl">Tennis</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-200">
-                I nostri maestri saranno felici di indicarti l&apos;opzione più adatta alle tue esigenze. Che tu sia un futuro agonista oppure pronto a divertirti in campo, prenota la tua lezione di prova.
-              </p>
-              <ul
-                role="list"
-                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-slate-50 sm:grid-cols-2"
+    <div className="relative isolate bg-white">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
+              <svg
+                className="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                aria-hidden="true"
               >
-                {benefits.map((benefit) => (
-                  <li key={benefit} className="flex gap-x-3 items-center">
-                    <FontAwesomeIcon icon={faCircleCheck} className="fa-sm" />
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-lime-500 px-4 py-3.5 text-sm font-regular text-slate-900 shadow-sm hover:bg-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faRacquet} className="mr-1.5" />
-                Visita l&apos;academy
-              </a>
+                <defs>
+                  <pattern
+                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+                    width={200}
+                    height={200}
+                    x="100%"
+                    y={-1}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <path d="M130 200V.5M.5 .5H200" fill="none" />
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" strokeWidth={0} fill="white" />
+                <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
+                  <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
+                </svg>
+                <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
+              </svg>
             </div>
-            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
+              integer elementum id sem. Arcu sed malesuada et magna.
+            </p>
+            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Address</span>
+                  <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                </dt>
+                <dd>
+                  545 Mavis Island
+                  <br />
+                  Chicago, IL 99191
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Telephone</span>
+                  <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                </dt>
+                <dd>
+                  <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
+                    +1 (555) 234-5678
+                  </a>
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Email</span>
+                  <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                </dt>
+                <dd>
+                  <a className="hover:text-gray-900" href="mailto:hello@example.com">
+                    hello@example.com
+                  </a>
+                </dd>
+              </div>
+            </dl>
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-white/5 p-8">
-                <dt className="text-sm font-semibold leading-6 text-slate-200">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-slate-50">{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
-        <div
-          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
-          aria-hidden="true"
-        >
-        </div>
-      </div>
-    </div>
-
-
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Approfitta dei vantaggi</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-          Richiedi la tua tessera DLF: con soli 12€ all’anno potrai accedere ad una vasta gamma di convenzioni dedicate, esperienze indimenticabili e vantaggi unici.
-          </p>
-          <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faBadgePercent} className="mr-1.5" />
-                Guardale tutte
-              </a>
-            </div>
-          <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-            {offers.map((offers) => (
-              <article key={offers.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
-                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                  <img
-                    src={offers.image}
-                    alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
+        <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                  First name
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autoComplete="given-name"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
-                <div>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <a
-                      href={offers.category.href}
-                      className={offers.classes}
-                    >
-                      {offers.category.category}
-                    </a>
-                  </div>
-                  <div className="group relative max-w-xl">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-900 group-hover:text-slate-600">
-                      <a href={offers.href}>
-                        <span className="absolute inset-0" />
-                        {offers.title}
-                      </a>
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">{offers.description}</p>
-                  </div>
-                  <div className="mt-3 relative">
-                      <img src={offers.logo} alt="" className="h-10" />
-                    </div>
+              </div>
+              <div>
+                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Last name
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autoComplete="family-name"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
                 </div>
-              </article>
-            ))}
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Email
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="email"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Phone number
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    autoComplete="tel"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Message
+                </label>
+                <div className="mt-2.5">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows={4}
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    defaultValue={''}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 flex justify-end">
+              <button
+                type="submit"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Send message
+              </button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
 
-
+    </main>
 
     <div className="bg-slate-200 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8">
