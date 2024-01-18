@@ -1,8 +1,8 @@
 "use client";
 
-import Footer from '../../../components/footer';
-import Warning from '../../../components/warning';
-import Header from '../../../components/header';
+import Header from '@/components/header';
+import Warning from '@/components/warning';
+import Footer from '@/components/footer';
 
 const timeline = [
   {

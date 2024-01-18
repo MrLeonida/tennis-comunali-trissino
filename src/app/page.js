@@ -3,9 +3,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent } from '@fortawesome/pro-solid-svg-icons'
 import { faAppStoreIos, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import Header from '../../components/header';
-import Warning from '../../components/warning';
-import Footer from '../../components/footer';
+import Header from '@/components/header';
+import Warning from '@/components/warning';
+import Footer from '@/components/footer';
 
 const posts = [
   {

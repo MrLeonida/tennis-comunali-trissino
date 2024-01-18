@@ -2,9 +2,9 @@
 
 import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon, CheckIcon } from '@heroicons/react/24/outline'
-import Footer from '../../../components/footer';
-import Warning from '../../../components/warning';
-import Header from '../../../components/header';
+import Header from '@/components/header';
+import Warning from '@/components/warning';
+import Footer from '@/components/footer';
 
 const includedFeatures = [
   'Private forum access',

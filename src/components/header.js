@@ -8,7 +8,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMedal, faTrain, faMasksTheater, faFamily } from '@fortawesome/pro-solid-svg-icons'
+import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMedal } from '@fortawesome/pro-solid-svg-icons'
 import Link from 'next/link';
 
 const products = [

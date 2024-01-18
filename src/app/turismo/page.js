@@ -1,9 +1,9 @@
 "use client";
 
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import Footer from '../../../components/footer';
-import Warning from '../../../components/warning';
-import Header from '../../../components/header';
+import Header from '@/components/header';
+import Warning from '@/components/warning';
+import Footer from '@/components/footer';
 
 const stats = [
   { label: 'Founded', value: '2021' },
