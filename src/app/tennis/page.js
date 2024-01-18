@@ -12,6 +12,7 @@ import {
   XMarkIcon,
   CheckCircleIcon,
   PlusSmallIcon,
+  MinusSmallIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
