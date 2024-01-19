@@ -8,7 +8,7 @@ const fontFamily = Poppins({ weight: ['100','200','300','400','500','600','700',
 
 export const metadata = {
   title: '[Develop] Associazione DLF Treviso Belluno',
-  description: 'Associazione DLF Treviso Belluno',
+  description: '[Develop] Associazione DLF Treviso Belluno',
 }
 
 export default function RootLayout({ children }) {
