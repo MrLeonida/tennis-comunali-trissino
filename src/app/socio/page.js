@@ -63,7 +63,7 @@ export default function Page() {
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-2xl font-bold tracking-tight text-gray-900">Tariffa di adesione</h3>
             <p className="mt-6 text-base leading-7 text-gray-600">
-              Scegliendo di aderire oggi, avrai accesso esclusivo a vantaggi applicati e potrai vivere la passione con noi al massimo.
+              Scegliendo di aderire oggi, avrai accesso esclusivo ad una serie di vantaggi e potrai vivere la passione con noi al massimo.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
               <h4 className="flex-none text-sm font-semibold leading-6 text-teal-800">Cos&apos;è incluso</h4>

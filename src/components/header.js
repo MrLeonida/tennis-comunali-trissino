@@ -19,7 +19,7 @@ const products = [
   { name: 'Volley', description: 'Divertiti con la nostra squadra amatoriale', href: '#', icon: faVolleyball },
 ]
 const callsToAction = [
-  { name: 'Tutti gli sport', href: '#', icon: faMedal }
+  { name: 'Tutti gli sport', href: '/sport', icon: faMedal }
 ]
 const company = [
   { name: 'Treviso e Belluno', href: '/associazione' },
@@ -145,10 +145,10 @@ export default function Header() {
           <a href="/turismo" className="text-sm font-semibold leading-6 text-slate-900">
             Turismo
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-slate-900">
+          <a href="/cultura" className="text-sm font-semibold leading-6 text-slate-900">
             Cultura
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-slate-900">
+          <a href="/servizi" className="text-sm font-semibold leading-6 text-slate-900">
             Servizi
           </a>
 
@@ -254,13 +254,13 @@ export default function Header() {
                   Turismo
                 </a>
                 <a
-                  href="#"
+                  href="/cultura"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-gray-50"
                 >
                   Cultura
                 </a>
                 <a
-                  href="#"
+                  href="/servizi"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-gray-50"
                 >
                   Servizi

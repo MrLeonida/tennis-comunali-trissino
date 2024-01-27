@@ -3,10 +3,10 @@
 const navigation = {
   main: [
     { name: 'Associazione', href: '/associazione' },
-    { name: 'Sport', href: '#' },
+    { name: 'Sport', href: '/sport' },
     { name: 'Turismo', href: '/turismo' },
-    { name: 'Cultura', href: '#' },
-    { name: 'Servizi', href: '#' },
+    { name: 'Cultura', href: '/cultura' },
+    { name: 'Servizi', href: '/servizi' },
     { name: 'Contatti', href: '/contatti' },
   ],
   social: [
