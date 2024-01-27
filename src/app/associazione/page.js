@@ -162,7 +162,7 @@ export default function Page() {
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-gray-900">Soci iscritti</p>
                 <p className="mt-2 text-base leading-7 text-gray-600">
-                  La forza dell&apos;associazione risiede nei suoi soci: una comunità unita e appassionata che costituisce l'anima della nostra organizzazione.
+                  La forza dell&apos;associazione risiede nei suoi soci: una comunità unita e appassionata che costituisce l&apos;anima della nostra organizzazione.
                 </p>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function Page() {
                   Le attività disponibili
                 </p>
                 <p className="mt-2 text-base leading-7 text-gray-400">
-                  Dalle escursioni alle sfide sportive, c'è un mondo di opportunità che ti aspetta. Crea ricordi indimenticabili con noi.
+                  Dalle escursioni alle sfide sportive, c&apos;è un mondo di opportunità che ti aspetta. Crea ricordi indimenticabili con noi.
                 </p>
               </div>
             </div>
