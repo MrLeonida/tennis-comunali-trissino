@@ -148,11 +148,10 @@ export default function Page() {
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              We approach the workplace as something that adds to our lives and adds value to world.
+              Concepiamo il luogo di lavoro non solo come uno spazio per compiti quotidiani, ma come un elemento che arricchisce le nostre vite.
             </h2>
             <p className="mt-6 text-base leading-7 text-gray-600">
-              Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu.
-              Cras purus nibh cursus sit eu in id. Integer vel nibh.
+              Siamo più di un&apos;associazione; siamo una comunità che abbraccia la passione per il lavoro e la visione di contribuire positivamente al nostro ambiente. Scoprite come, attraverso il nostro impegno, creiamo un connubio unico tra vita professionale e benessere collettivo.
             </p>
           </div>
           <div className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
