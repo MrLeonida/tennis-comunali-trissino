@@ -1,5 +1,7 @@
 "use client";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserTieHair, faUserTieHairLong, faUserGroupSimple } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
@@ -7,53 +9,49 @@ import Footer from '@/components/footer';
 const timeline = [
   {
     name: 'Fondazione del DLF',
-    description: 'Nei primi anni del Novecento, la ferrovia si erge come simbolo del cambiamento sociale. Nel 1925, il regio decreto legge n. 1908 sancisce la nascita del Dopolavoro Ferroviario, il primo e più significativo dopolavoro per numero di aderenti e dimensioni organizzative. I ferrovieri, dopo intense giornate di lavoro, trovano nel DLF la possibilità di vivere nuove esperienze e di partecipare a iniziative sportive, culturali e turistiche.',
+    description: 'La ferrovia, simbolo di cambiamento sociale, ispira nel 1925 il Dopolavoro Ferroviario, il più grande e pionieristico dopolavoro. I ferrovieri, dopo il lavoro, trovano nel DLF la possibilità di partecipare a iniziative culturali e sportive.',
     date: '1925-1935',
     dateTime: '1925-01',
   },
   {
     name: 'Crescita ed attività del DLF',
-    description: 'La capillarità della rete ferroviaria, la facilità di comunicazione e lo spirito di corpo dei ferrovieri contribuiscono allo sviluppo rapido del DLF. Nel 1935, a dieci anni dalla sua fondazione, conta già 273 sedi e 135 mila soci. Durante gli anni 70 e 90, il DLF subisce trasformazioni significative, ottenendo autonomia e investendo in impianti sportivi, sedi sociali, strutture turistiche e ricreative. Le attività includono anche la gestione delle mense ferroviarie, garantendo servizi di qualità.',
+    description: 'La rete ferroviaria e lo spirito di corpo accelerano la crescita del DLF, con 273 sedi e 135 mila soci nel 1935. Negli anni \'70 e \'90, trasformazioni significative portano autonomia, investimenti e gestione delle mense ferroviarie.',
     date: '1935-1970',
     dateTime: '1935-01',
   },
   {
-    name: 'La Nascita dell&apos;associazione Nazionale',
-    description: 'Il 1995 segna una svolta, con la trasformazione del DLF in Associazione Nazionale. La costituzione dell&apos;Associazione Nazionale DLF avviene in risposta alla trasformazione delle Ferrovie dello Stato in SpA. Questo cambiamento consente al DLF di evolversi in una realtà del "non-profit", intervenendo nei settori in cui il "terzo settore" può avere un ruolo da protagonista. La riforma degli statuti e la costituzione dell&apos;Associazione Nazionale DLF riflettono questa evoluzione.',
+    name: 'Nascita dell\'associazione nazionale',
+    description: 'Nel 1995, il DLF diventa Associazione Nazionale, rispondendo alla trasformazione delle Ferrovie dello Stato. La riforma statutaria riflette l\'evoluzione verso il "non-profit" e il coinvolgimento nel "terzo settore"',
     date: '1995',
     dateTime: '1995-01',
   },
   {
     name: 'Trasformazioni e nuovi orizzonti',
-    description: 'Dal 2000, il DLF affronta sfide legate alla valorizzazione degli immobili utilizzati, ma grazie a decisioni del Parlamento italiano, si evita la privatizzazione dei beni immobili. L&apos;Associazione Nazionale DLF paga canoni locativi e acquisisce parte degli immobili per garantire la continuità delle attività. Con quasi 100 anni di storia, il DLF, oggi con una struttura matura e vitale, si prepara a nuovi orizzonti con la costituzione della Società Patrimonio DLF e la prospettiva di una "Fondazione DLF"',
+    description: 'Dal 2000, sfide sulla valorizzazione degli immobili spingono il DLF a pagare canoni locativi e acquisire parte degli immobili. Con quasi 100 anni di storia, la struttura matura anticipa nuovi orizzonti con la Società Patrimonio DLF e la prossima "Fondazione DLF".',
     date: '2000-oggi',
     dateTime: '2000-01',
   },
 ]
 const people = [
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    name: 'Badami Alessandro',
+    role: 'Presidente',
+    icon: faUserTieHair,
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    name: 'Busato Daniela',
+    role: 'Vice presidente',
+    icon: faUserTieHairLong,
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    name: 'Terziario Michele',
+    role: 'Amministratore',
+    icon: faUserTieHair,
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    name: 'Consiglieri',
+    role: 'Bertocco Vittorio\nBaratta Nicoletta\nVerdone Maria Giuseppina\nVisentin Roberto',
+    icon: faUserGroupSimple,
   }
 ]
 
@@ -135,10 +133,10 @@ export default function Page() {
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
-                <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                <FontAwesomeIcon icon={person.icon} className="h-16 w-16 text-indigo-600 fa-2xl" aria-hidden="true" />
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                  <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                  <p className="text-sm font-semibold leading-6 text-indigo-600" style={{whiteSpace: 'pre-wrap'}}>{person.role}</p>
                 </div>
               </div>
             </li>
