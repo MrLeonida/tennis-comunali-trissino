@@ -1,8 +1,5 @@
 "use client";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/pro-solid-svg-icons'
-
 const navigation = {
   main: [
     { name: 'Associazione', href: '/associazione' },
@@ -73,16 +70,15 @@ export default function Footer() {
         <div className="flex items-center">
             <a
               href="#"
-              className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              className="rounded-md bg-teal-800 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
-              <FontAwesomeIcon icon={faPaperPlane} className="mr-1.5" />
               Iscriviti
             </a>
           </div>
         </div>
         <p className="mt-4 text-sm leading-6 text-gray-900">
           Ci teniamo molto alla privacy dei tuoi dati. Leggi la nostra{' '}
-          <a href="#" className="font-semibold text-sky-600 hover:text-sky-500">
+          <a href="#" className="font-semibold text-teal-800 hover:text-teal-700">
             privacy&nbsp;policy
           </a>
           .
