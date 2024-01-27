@@ -6,32 +6,28 @@ import Footer from '@/components/footer';
 
 const timeline = [
   {
-    name: 'Founded company',
-    description:
-      'Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.',
-    date: 'Aug 2021',
-    dateTime: '2021-08',
+    name: 'Fondazione del DLF',
+    description: 'Nei primi anni del Novecento, la ferrovia si erge come simbolo del cambiamento sociale. Nel 1925, il regio decreto legge n. 1908 sancisce la nascita del Dopolavoro Ferroviario, il primo e più significativo dopolavoro per numero di aderenti e dimensioni organizzative. I ferrovieri, dopo intense giornate di lavoro, trovano nel DLF la possibilità di vivere nuove esperienze e di partecipare a iniziative sportive, culturali e turistiche.',
+    date: '1925-1935',
+    dateTime: '1925-01',
   },
   {
-    name: 'Secured $65m in funding',
-    description:
-      'Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.',
-    date: 'Dec 2021',
-    dateTime: '2021-12',
+    name: 'Crescita ed attività del DLF',
+    description: 'La capillarità della rete ferroviaria, la facilità di comunicazione e lo spirito di corpo dei ferrovieri contribuiscono allo sviluppo rapido del DLF. Nel 1935, a dieci anni dalla sua fondazione, conta già 273 sedi e 135 mila soci. Durante gli anni 70 e 90, il DLF subisce trasformazioni significative, ottenendo autonomia e investendo in impianti sportivi, sedi sociali, strutture turistiche e ricreative. Le attività includono anche la gestione delle mense ferroviarie, garantendo servizi di qualità.',
+    date: '1935-1970',
+    dateTime: '1935-01',
   },
   {
-    name: 'Released beta',
-    description:
-      'Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.',
-    date: 'Feb 2022',
-    dateTime: '2022-02',
+    name: 'La Nascita dell&apos;associazione Nazionale',
+    description: 'Il 1995 segna una svolta, con la trasformazione del DLF in Associazione Nazionale. La costituzione dell&apos;Associazione Nazionale DLF avviene in risposta alla trasformazione delle Ferrovie dello Stato in SpA. Questo cambiamento consente al DLF di evolversi in una realtà del "non-profit", intervenendo nei settori in cui il "terzo settore" può avere un ruolo da protagonista. La riforma degli statuti e la costituzione dell&apos;Associazione Nazionale DLF riflettono questa evoluzione.',
+    date: '1995',
+    dateTime: '1995-01',
   },
   {
-    name: 'Global launch of product',
-    description:
-      'Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.',
-    date: 'Dec 2022',
-    dateTime: '2022-12',
+    name: 'Trasformazioni e nuovi orizzonti',
+    description: 'Dal 2000, il DLF affronta sfide legate alla valorizzazione degli immobili utilizzati, ma grazie a decisioni del Parlamento italiano, si evita la privatizzazione dei beni immobili. L&apos;Associazione Nazionale DLF paga canoni locativi e acquisisce parte degli immobili per garantire la continuità delle attività. Con quasi 100 anni di storia, il DLF, oggi con una struttura matura e vitale, si prepara a nuovi orizzonti con la costituzione della Società Patrimonio DLF e la prospettiva di una "Fondazione DLF"',
+    date: '2000-oggi',
+    dateTime: '2000-01',
   },
 ]
 const people = [
@@ -93,7 +89,7 @@ export default function Page() {
                 </p>
               </div>
               <img
-                src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
+                src="/heroAssociazioneMin.jpg"
                 alt=""
                 className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
               />
@@ -130,10 +126,9 @@ export default function Page() {
         <div className="bg-white py-24 sm:py-32 mt-24 sm:mt-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Incontra il nostro team</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
-            suspendisse.
+            Il nostro team è il cuore pulsante dietro le attività coinvolgenti e le iniziative che rendono il nostro dopolavoro un luogo vibrante e accogliente. Conosci le persone appassionate e dedite che lavorano instancabilmente per creare un&apos;esperienza unica per i nostri soci.
           </p>
         </div>
         <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
