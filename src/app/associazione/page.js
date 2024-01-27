@@ -168,7 +168,7 @@ export default function Page() {
               <p className="flex-none text-3xl font-bold tracking-tight text-white">$8.9 billion</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">
-                  We’re proud that our customers have made over $8 billion in total revenue.
+                  We’re proud that our customers have made over $8 billion in total revenues.
                 </p>
                 <p className="mt-2 text-base leading-7 text-gray-400">
                   Eu duis porta aliquam ornare. Elementum eget magna egestas.
