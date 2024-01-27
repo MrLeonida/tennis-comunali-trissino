@@ -89,7 +89,7 @@ export default function Page() {
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
-                  Attraverso iniziative sportive, culturali, e ricreative, miriamo a potenziare l'utilizzo del tempo libero, migliorare le condizioni di crescita culturale e sociale degli iscritti, e favorire l'armonizzazione della vita associativa attraverso lo scambio di valori ed esperienze, coinvolgendo non solo gli associati ma anche le loro famiglie.
+                  Attraverso iniziative sportive, culturali, e ricreative, miriamo a potenziare l&apos;utilizzo del tempo libero, migliorare le condizioni di crescita culturale e sociale degli iscritti, e favorire l&apos;armonizzazione della vita associativa attraverso lo scambio di valori ed esperienze, coinvolgendo non solo gli associati ma anche le loro famiglie.
                 </p>
               </div>
               <img
