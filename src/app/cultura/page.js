@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShip, faHotel, faPlane } from '@fortawesome/pro-solid-svg-icons'
+import { faPlane, faLeaf, faTrain, faCamera } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
@@ -10,19 +10,24 @@ import Faq from '@/components/faq';
 
 const highligths = [
   {
-    title: 'MSC Crociere e Costa Crociere',
-    text: 'Scopri le destinazioni più belle da vivere in crociera, con un\'ampia varietà di itinerari pensati appositamente per offrire magnifiche viste e panorami, suoni e sapori delle culture più affascinanti al mondo.',
-    icon: faShip,
-  },
-  {
-    title: 'Booking e Expedia',
-    text: 'Trova la tua struttura ideale dove soggiornare durante il tuo indimenticabile viaggio.',
-    icon: faHotel,
-  },
-  {
-    title: 'Iberia',
-    text: 'Prenota il tuo volo ed approfitta di imperdibili offerte per visitare le città più conosciute al mondo.',
+    title: 'Viaggiando con passione',
+    text: 'Esplora il mondo con le nostre avvincenti gite turistiche, anche in collaborazione con Bontur Viaggi.',
     icon: faPlane,
+  },
+  {
+    title: 'Natura ed avventura',
+    text: 'Dalle escursioni montane alle passeggiate culturali, esploriamo insieme il mondo che ci circonda.',
+    icon: faLeaf,
+  },
+  {
+    title: 'Costruendo mondi in miniatura',
+    text: 'Dalle escursioni montane alle passeggiate culturali, esploriamo insieme il mondo che ci circonda con il fermomodellismo.',
+    icon: faTrain,
+  },
+  {
+    title: 'Catturando istanti, creando memorie',
+    text: 'Scopri l\'arte della fotografia attraverso corsi formativi e partecipa alle nostre emozionanti mostre.',
+    icon: faCamera,
   }
 ]
 
@@ -84,17 +89,17 @@ export default function Example() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Turismo come punto d&apos;incontro
+                    Esplora il mondo culturale DLF
                   </h1>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Il turismo rappresenta un pilastro fondamentale delle iniziative promosse dal Dopolavoro Ferroviario. Questa tradizione radicata nel tempo ha favorito l&apos;incremento della partecipazione, della coesione e dell&apos;interesse da parte degli iscritti alla nostra associazione.
+                    Nel corso degli anni, le Associazioni del Dopolavoro Ferroviario hanno organizzato eventi di rilievo nazionale, diventando un punto di riferimento nelle realtà cittadine.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="/imageTurismo1.jpg"
+                        src="/imageCultura1.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -104,7 +109,7 @@ export default function Example() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="/imageTurismo2.jpg"
+                        src="/imageCultura2.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -112,7 +117,7 @@ export default function Example() {
                     </div>
                     <div className="relative">
                       <img
-                        src="/imageTurismo3.jpg"
+                        src="/imageCultura3.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -122,7 +127,7 @@ export default function Example() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="/imageTurismo4.jpg"
+                        src="/imageCultura4.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -130,7 +135,7 @@ export default function Example() {
                     </div>
                     <div className="relative">
                       <img
-                        src="/imageTurismo5.jpg"
+                        src="/imageCultura5.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -155,7 +160,7 @@ export default function Example() {
                 aria-hidden="true"
               >
                 <div
-                  className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4f46e5] to-[#0284c7] opacity-40"
+                  className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4f46e5] to-[#0d9488] opacity-40"
                   style={{
                     clipPath:
                       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -164,13 +169,13 @@ export default function Example() {
               </div>
               <figure className="relative isolate">
                 <p className="mt-6 text-2xl font-semibold leading-10 text-white">
-                    Convenzioni per i soci
+                    Tariffe ed orari per i soci
                 </p>
                 <p className="mt-2 text-md leading-6 text-slate-100">
-                    <span className='font-medium'>Bontur Viaggi:</span> sconti fino al 5%
+                    <span className='font-medium'>Fermodellismo:</span> 15,00€
                 </p>
                 <p className="mt-2 text-md leading-6 text-slate-100">
-                  Altre convenzioni dal DLF nazionale
+                  <span className='font-medium'>Fotografica:</span> 15,00€ (ritrovo il lunedì sera)
                 </p>
                 <figcaption className="mt-6 text-sm leading-6 text-slate-300 underline underline-offset-2">
                   <a href="/contatti">
@@ -182,30 +187,30 @@ export default function Example() {
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-sky-600">Un mondo di convenzioni</p>
+              <p className="text-base font-semibold leading-7 text-teal-800">L&apos;essenza del DLF</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Esplora mete turistiche affascinanti
+                I valori e le attività della nostra associazione
               </h1>
               <div className="max-w-xl">
                 <p className="mt-6">
-                  Il Dopolavoro Ferroviario celebra il turismo come il suo fulcro, animando la partecipazione e l&apos;entusiasmo dei soci ferrovieri e delle loro famiglie. I pacchetti esclusivi, frutto di collaborazioni dirette con le agenzie di viaggio, offrono esperienze impeccabili, allineate agli standard dei migliori operatori. Un piccolo elenco delle convenzioni attive:
+                La cultura è un pilastro fondamentale nel DLF, con la preservazione della memoria, la prospettiva aperta sul mondo e l&apos;utilizzo della tecnologia come strumento chiave.Le attività culturali, come concorsi fotografici, competizioni letterarie e mostre, riflettono l&apos;impegno del DLF nel soddisfare le diverse esigenze dei suoi soci.
                 </p>
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 {highligths.map((highligth) => (
                   <li key={highligth.title} className="flex gap-x-3">
-                    <FontAwesomeIcon icon={highligth.icon} className="mt-1 h-5 w-5 flex-none text-sky-600 fa-lg" />
+                    <FontAwesomeIcon icon={highligth.icon} className="mt-1 h-5 w-5 flex-none text-teal-800 fa-lg" />
                     <span>
                       <strong className="font-semibold text-gray-900">{highligth.title}</strong>. {highligth.text}</span>
                   </li>
                 ))}
               </ul>
                 <p className="mt-8">
-                Inoltre, l&apos;offerta del DLF spazia anche tra agriturismi, alberghi, campeggi e proposte per ogni gusto presenti sul territorio: dal trekking all&apos;enogastronomia, dalle vacanze al mare alla settimana bianca in montagna.
+                Crediamo nel favorire la collaborazione, abbracciare la diversità e coltivare un ambiente in cui ogni membro del team prospera. Unisciti a noi mentre affrontiamo insieme il futuro del lavoro, guidati dall&apos;impegno per l&apos;innovazione, l&apos;inclusività e il successo di ciascun individuo nella nostra dinamica comunità remota.
                 </p>
               </div>
             </div>
             <div className="mt-10 flex">
-              <a href="/associazione" className="text-base font-semibold leading-7 text-sky-600 underline underline-offset-2">
+              <a href="/associazione" className="text-base font-semibold leading-7 text-teal-800 underline underline-offset-2">
                 Approfondisci la nostra realtà <span aria-hidden="true">&rarr;</span>
               </a>
             </div>

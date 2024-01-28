@@ -14,7 +14,7 @@ export default function Warning() {
     <div className="flex items-center justify-center gap-x-6 bg-teal-800 px-6 py-2.5 sm:px-3.5">
     <p className="text-sm leading-6 text-white">
         <FontAwesomeIcon icon={faBells} className="fa-lg mr-1.5" />
-        Questo sito web è in costruzione, torna a trovarci nel 2024 per scoprire le novità.
+        Questo sito web è in costruzione, torna a trovarci a Marzo 2024 per scoprire tutte le novità.
     </p>
   </div>
 

@@ -1,9 +1,11 @@
 "use client";
 
-import { PhoneIcon, BuildingOffice2Icon, EnvelopeIcon } from '@heroicons/react/20/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBuildings, faClock, faEnvelope, faPhone } from '@fortawesome/pro-solid-svg-icons';
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
+import Faq from '@/components/faq';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -26,18 +28,17 @@ export default function Page() {
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
-              Data to enrich your online business
+              Rispondiamo a qualsiasi dubbio
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              Vieni a trovarci, la nostra segreteria sarà lieta di rispondere a tutte le tue domande. Gli orari di apertura sono dal lunedì al venerdì dalle ore 9:00 alle ore 13 :00 e dalle ore 15:00 alle ore 18:00. Ti aspettiamo!
             </p>
           </div>
         </div>
         <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
           <img
             className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-            src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2102&q=80"
+            src="/heroContatti.jpg"
             alt=""
           />
         </div>
@@ -73,42 +74,77 @@ export default function Page() {
                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
               </svg>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Rimani in contatto</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt
-              integer elementum id sem. Arcu sed malesuada et magna.
+              Per contattarci o avere ulteriori informazioni, potrei scegliere di telefonare oppure scrivere una mail al nostro indirizzo o utilizzare i nostri canali social. Ti forniremo una risposta nel più breve tempo possibile.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                  <span className="sr-only">Dove siamo</span>
+                  <FontAwesomeIcon icon={faBuildings} className="text-slate-600 fa-lg" />
                 </dt>
                 <dd>
-                  545 Mavis Island
+                  <span className='font-semibold'>Dove siamo</span>
                   <br />
-                  Chicago, IL 99191
+                  Via Giuseppe Benzi, 86
+                  <br />
+                  31100 Treviso (TV)
                 </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                  <span className="sr-only">Orari della sede</span>
+                  <FontAwesomeIcon icon={faClock} className="text-slate-600 fa-lg" />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
-                    +1 (555) 234-5678
+                  <span className='font-semibold'>Orari della sede</span>
+                  <br />
+                  Dal lunedì al venerdì: 08.30-22.30
+                  <br />
+                  Il sabato: 08.30-18.30
+                  <br />
+                  La domenica ed i festivi: 8.30-13.00
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Orari degli uffici</span>
+                  <FontAwesomeIcon icon={faClock} className="text-slate-600 fa-lg" />
+                </dt>
+                <dd>
+                  <span className='font-semibold'>Orari degli uffici</span>
+                  <br />
+                  Dal lunedì al venerdì: 09.00-13.00 e 15.00-18.00
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Telefono</span>
+                  <FontAwesomeIcon icon={faPhone} className="text-slate-600 fa-lg" />
+                </dt>
+                <dd>
+                  <span className='font-semibold'>Per chiamarci</span>
+                  <br />
+                  <a className="hover:text-gray-900 underline underline-offset-2" href="tel:+39 0422 401540">
+                    +39 0422 401540
                   </a>
                 </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
-                  <EnvelopeIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+                  <FontAwesomeIcon icon={faEnvelope} className="text-slate-600 fa-lg" />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-900" href="mailto:hello@example.com">
-                    hello@example.com
+                  <span className='font-semibold'>Per scriverci</span>
+                  <br />
+                  <a className="hover:text-gray-900 underline underline-offset-2" href="mailto:dlftreviso@dlf.it">
+                    dlftreviso@dlf.it
+                  </a>
+                  <br />
+                  <a className="hover:text-gray-900 underline underline-offset-2" href="mailto:dopoferroviariotreviso@pec.buffetti.it">
+                    dopoferroviariotreviso@pec.buffetti.it
                   </a>
                 </dd>
               </div>
@@ -120,7 +156,7 @@ export default function Page() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                  First name
+                  Nome
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -134,7 +170,7 @@ export default function Page() {
               </div>
               <div>
                 <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Last name
+                  Cognome
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -162,7 +198,7 @@ export default function Page() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Phone number
+                  Numero di telefono
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -176,7 +212,7 @@ export default function Page() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Message
+                  Messaggio
                 </label>
                 <div className="mt-2.5">
                   <textarea
@@ -192,9 +228,9 @@ export default function Page() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-indigo-800 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Send message
+                Invia il messaggio
               </button>
             </div>
           </div>
@@ -204,6 +240,7 @@ export default function Page() {
 
     </main>
 
+    <Faq />
 
     <Footer />
 

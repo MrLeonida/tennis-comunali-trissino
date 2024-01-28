@@ -8,18 +8,19 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMedal } from '@fortawesome/pro-solid-svg-icons'
+import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMedal, faMountain } from '@fortawesome/pro-solid-svg-icons'
 import Link from 'next/link';
 
 const products = [
-  { name: 'Tennis', description: 'Scendi in campo con Treviso Tennis Team', href: '/tennis', icon: faTennisBall },
-  { name: 'Canottaggio', description: 'Unisciti ad una scuola ai vertici nazionali', href: '#', icon: faWater },
-  { name: 'Calcetto', description: 'Chiama gli amici, il pallone lo mettiamo noi', href: '#', icon: faFutbol },
-  { name: 'Karate', description: 'Allaccia la cintura e sali sul tatami', href: '#', icon: faUniformMartialArts },
-  { name: 'Volley', description: 'Divertiti con la nostra squadra amatoriale', href: '#', icon: faVolleyball },
+  { name: 'Tennis', description: 'Scendi in campo con Treviso Tennis Team', href: '/sport/tennis', icon: faTennisBall },
+  { name: 'Canottaggio', description: 'Unisciti ad una scuola ai vertici nazionali', href: '/sport/canotaggio', icon: faWater },
+  { name: 'Escursionismo', description: 'Escursioni e ferrate con il gruppo Geam', href: '/sport/escursionismo', icon: faMountain },
+  { name: 'Calcetto', description: 'Chiama gli amici, il pallone lo mettiamo noi', href: '/sport/calcetto', icon: faFutbol },
+  { name: 'Karate', description: 'Allaccia la cintura e sali sul tatami', href: '/sport/karate', icon: faUniformMartialArts },
+  { name: 'Volley', description: 'Divertiti con la nostra squadra amatoriale', href: '/sport/volley', icon: faVolleyball },
 ]
 const callsToAction = [
-  { name: 'Tutti gli sport', href: '#', icon: faMedal }
+  { name: 'Tutti gli sport', href: '/sport', icon: faMedal }
 ]
 const company = [
   { name: 'Treviso e Belluno', href: '/associazione' },
@@ -47,7 +48,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Associazione DLF Treviso</span>
-            <img className="h-8 w-auto" src="/logo-multi-color.png" alt="" />
+            <img className="h-8 w-auto" src="/logo.png" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -114,7 +115,7 @@ export default function Header() {
                       className="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-slate-200 group-hover:bg-slate-100">
-                        <FontAwesomeIcon icon={item.icon} className="h-6 w-6 text-slate-600 group-hover:text-sky-600 fa-lg" aria-hidden="true" />
+                        <FontAwesomeIcon icon={item.icon} className="h-6 w-6 text-slate-600 group-hover:text-indigo-600 fa-lg" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-slate-900">
@@ -145,10 +146,10 @@ export default function Header() {
           <a href="/turismo" className="text-sm font-semibold leading-6 text-slate-900">
             Turismo
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-slate-900">
+          <a href="/cultura" className="text-sm font-semibold leading-6 text-slate-900">
             Cultura
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-slate-900">
+          <a href="/servizi" className="text-sm font-semibold leading-6 text-slate-900">
             Servizi
           </a>
 
@@ -254,13 +255,13 @@ export default function Header() {
                   Turismo
                 </a>
                 <a
-                  href="#"
+                  href="/cultura"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-gray-50"
                 >
                   Cultura
                 </a>
                 <a
-                  href="#"
+                  href="/servizi"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-gray-50"
                 >
                   Servizi
