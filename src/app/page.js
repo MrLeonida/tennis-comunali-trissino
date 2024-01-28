@@ -1,20 +1,22 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent } from '@fortawesome/pro-solid-svg-icons'
+import { faMedal, faTrain, faMasksTheater, faFamily } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
 import AppStore from '@/components/appStore';
 import GooglePlay from '@/components/googlePlay';
+import Banner from '@/components/banner';
+import Faq from '@/components/faq';
 
 const posts = [
   {
     id: 1,
     title: 'Sport',
-    href: '#',
+    href: '/sport',
     description: 'Da sempre inteso come attività ludica e di intrattenimento per eccellenza, lo sport costituisce un momento importante di formazione, di benessere fisico e di aggregazione.',
-    imageUrl: '/sport-min.jpg',
+    imageUrl: '/imageHomeSport.jpg',
     classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-amber-500 group-hover:bg-amber-400',
     icon: faMedal,
   },
@@ -23,95 +25,27 @@ const posts = [
     title: 'Turismo',
     href: '/turismo',
     description: 'Il turismo è un punto di forza delle attività del Dopolavoro Ferroviario. Una tradizione storica che ha visto crescere la partecipazione, l’aggregazione e l’entusiasmo dei soci ferrovieri e non solo.',
-    imageUrl: '/turismo-min.jpg',
+    imageUrl: '/imageHomeTurismo.jpg',
     classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-500 group-hover:bg-blue-400',
     icon: faTrain,
   },
   {
     id: 3,
     title: 'Cultura',
-    href: '#',
+    href: '/cultura',
     description: 'La conservazione della memoria comune, la visione del mondo come spazio aperto, la tecnica vissuta come strumento ma non come fine, questo è il nostro approccio verso le attività culturali.',
-    imageUrl: '/cultura-min.jpg',
+    imageUrl: '/imageHomeCultura.jpg',
     classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-emerald-500 group-hover:bg-emerald-400',
     icon: faMasksTheater,
   },
   {
     id: 4,
     title: 'Servizi',
-    href: '#',
+    href: '/servizi',
     description: 'Il settore dei servizi è indispensabile per assolvere alla finalità del DLF, esso permette di offrire spazi ed opportunità ai soci mettendo a loro disposizione gli strumenti necessari allo sviluppo.',
-    imageUrl: '/servizi-min.jpg',
+    imageUrl: '/imageHomeServizi.jpg',
     classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-red-500 group-hover:bg-red-400',
     icon: faFamily,
-  },
-]
-const benefits = [
-  'Scuola tennis riconosciuta FIT',
-  'Corsi per principianti',
-  'Corsi livello intermedio',
-  'Corsi di perfezionamento',
-  'Lezioni individuali o di gruppo',
-  'Allenamenti squadre agonisti',
-]
-const stats = [
-  { id: 1, name: 'Campi da gioco', value: '5' },
-  { id: 2, name: 'Iscritti scuola tennis', value: '100+' },
-  { id: 3, name: 'Tesserati agonisti', value: '50+' },
-  { id: 4, name: 'Squadre agonistiche', value: '4' },
-]
-const offers = [
-  {
-    id: 1,
-    title: 'Sconto del 25%',
-    href: '#',
-    description: 'Abbigliamento e calzature sportive per ogni attività.',
-    image: '/adidas.jpg',
-    logo: '/adidas-logo.png',
-    classes: 'relative z-10 rounded-full bg-amber-500 px-3 py-1.5 font-medium text-slate-50 hover:bg-amber-400',
-    category: {
-      href: "#",
-      category: "Sport",
-    }
-  },
-  {
-    id: 2,
-    title: 'Fino al 10%',
-    href: '#',
-    description: 'Soggiorna nei migliori hotel e appartamenti del mondo.',
-    image: '/booking.jpg',
-    logo: '/booking-logo.png',
-    classes: 'relative z-10 rounded-full bg-blue-500 px-3 py-1.5 font-medium text-slate-50 hover:bg-blue-400',
-    category: {
-      href: "#",
-      category: "Turismo",
-    }
-  },
-  {
-    id: 3,
-    title: 'Sconto di 10€',
-    href: '#',
-    description: 'Serie TV e film Disney, Marvel, Pixar, Star Wars e tanto altro ancora.',
-    image: '/disney.jpg',
-    logo: '/disney-logo.png',
-    classes: 'relative z-10 rounded-full bg-emerald-500 px-3 py-1.5 font-medium text-slate-50 hover:bg-emerald-400',
-    category: {
-      href: "#",
-      category: "Cultura",
-    }
-  },
-  {
-    id: 4,
-    title: 'Sconto del 20%',
-    href: '#',
-    description: 'Tecnologia all\'avanguardia per la pulizia della casa.',
-    image: '/dyson.jpg',
-    logo: '/dyson-logo.png',
-    classes: 'relative z-10 rounded-full bg-red-500 px-3 py-1.5 font-medium text-slate-50 hover:bg-red-400',
-    category: {
-      href: "#",
-      category: "Servizi",
-    }
   },
 ]
 
@@ -122,7 +56,7 @@ function classNames(...classes) {
 export default function Page() {
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-slate-800">
     
     <Warning />
     
@@ -130,7 +64,7 @@ export default function Page() {
 
       <div className="relative isolate overflow-hidden pt-14">
         <img
-          src="/hero-image-min.jpg"
+          src="/heroHome.jpg"
           alt=""
           className="absolute inset-0 -z-20 h-full w-full object-cover"
         />
@@ -183,6 +117,34 @@ export default function Page() {
         </div>
       </div>
 
+      
+      <div className="relative bg-gray-900">
+      <div className="relative h-80 overflow-hidden bg-indigo-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+        <img
+          className="h-full w-full object-cover"
+          src="/heroAssociazione.jpg"
+          alt=""
+        />
+        <div className="absolute inset-0 z-10 h-full w-full bg-slate-700/50"></div>
+      </div>
+      <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
+        <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
+          <h2 className="text-base font-semibold leading-7 text-indigo-400">Solidità, dinamismo e crescita</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Una storia centenaria fatta di impegno, collettività ed esperienze</p>
+          <p className="mt-6 text-base leading-7 text-gray-300">
+            Attraverso iniziative sportive, culturali, e ricreative, miriamo a potenziare l&apos;utilizzo del tempo libero, migliorare le condizioni di crescita culturale e sociale degli iscritti, e favorire l&apos;armonizzazione della vita associativa attraverso lo scambio di valori ed esperienze, coinvolgendo non solo gli associati ma anche le loro famiglie.
+          </p>
+          <div className="mt-8">
+            <a
+              href="/associazione"
+              className="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Approfondisci la nostra realtà
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -201,7 +163,7 @@ export default function Page() {
               <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
               <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
+              <a className="absolute inset-0 z-10" href={post.href}></a>
               <div className="flex flex-wrap items-center gap-x-2.5 overflow-hidden text-sm leading-6 text-gray-300">
                 <div className={post.classes}>
                   <FontAwesomeIcon icon={post.icon} className="h-6 w-6 text-slate-50 fa-lg" aria-hidden="true" />
@@ -211,9 +173,7 @@ export default function Page() {
                 </div>
               </div>
               <h3 className="mt-3 text-sm font-light leading-6 text-slate-50">
-                <a href={post.href}>
                 {post.description}
-                </a>
               </h3>
             </article>
           ))}
@@ -221,117 +181,9 @@ export default function Page() {
       </div>
     </div>
 
+    <Banner />
 
-    <div className="bg-gray-900 py-24 sm:py-32">
-      <div className="relative isolate">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-            <img
-              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-              src="/team-min.jpg"
-              alt=""
-            />
-            <div className="w-full flex-auto">
-              <h2 className="text-3xl font-bold tracking-tight text-lime-500 sm:text-4xl">Tennis</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-200">
-                I nostri maestri saranno felici di indicarti l&apos;opzione più adatta alle tue esigenze. Che tu sia un futuro agonista oppure pronto a divertirti in campo, prenota la tua lezione di prova.
-              </p>
-              <ul
-                role="list"
-                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-slate-50 sm:grid-cols-2"
-              >
-                {benefits.map((benefit) => (
-                  <li key={benefit} className="flex gap-x-3 items-center">
-                    <FontAwesomeIcon icon={faCircleCheck} className="fa-sm" />
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-lime-500 px-4 py-3.5 text-sm font-regular text-slate-900 shadow-sm hover:bg-lime-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faRacquet} className="mr-1.5" />
-                Visita l&apos;academy
-              </a>
-            </div>
-            </div>
-          </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col bg-white/5 p-8">
-                <dt className="text-sm font-semibold leading-6 text-slate-200">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-slate-50">{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-        <div
-          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
-          aria-hidden="true"
-        >
-        </div>
-      </div>
-    </div>
-
-
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Approfitta dei vantaggi</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-          Richiedi la tua tessera DLF: con soli 12€ all’anno potrai accedere ad una vasta gamma di convenzioni dedicate, esperienze indimenticabili e vantaggi unici.
-          </p>
-          <div className="mt-10 flex items-center">
-              <a
-                href="#"
-                className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-              >
-                <FontAwesomeIcon icon={faBadgePercent} className="mr-1.5" />
-                Guardale tutte
-              </a>
-            </div>
-          <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-            {offers.map((offers) => (
-              <article key={offers.id} className="relative isolate flex flex-col gap-8 lg:flex-row">
-                <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                  <img
-                    src={offers.image}
-                    alt=""
-                    className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
-                  />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
-                <div>
-                  <div className="flex items-center gap-x-4 text-xs">
-                    <a
-                      href={offers.category.href}
-                      className={offers.classes}
-                    >
-                      {offers.category.category}
-                    </a>
-                  </div>
-                  <div className="group relative max-w-xl">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-900 group-hover:text-slate-600">
-                      <a href={offers.href}>
-                        <span className="absolute inset-0" />
-                        {offers.title}
-                      </a>
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">{offers.description}</p>
-                  </div>
-                  <div className="mt-3 relative">
-                      <img src={offers.logo} alt="" className="h-10" />
-                    </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <Faq />
 
     <Footer />
 

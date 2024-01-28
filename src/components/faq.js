@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Come rimanere aggiornati sulle attività organizzate?",
-    answer: "La sezione News del sito sarà sempre aggiornata con le ultime novità dell’associazione e delle nostre organizzazioni sportive.",
+    answer: "La sezione News del sito sarà presto disponibile e sempre aggiornata con le ultime novità dell’associazione e delle nostre organizzazioni sportive.",
   }
 ]
 
