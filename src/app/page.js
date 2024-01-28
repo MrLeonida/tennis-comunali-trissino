@@ -2,10 +2,11 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMedal, faTrain, faMasksTheater, faFamily, faRacquet, faCircleCheck, faBadgePercent } from '@fortawesome/pro-solid-svg-icons'
-import { faAppStoreIos, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
+import AppStore from '@/components/appStore';
+import GooglePlay from '@/components/googlePlay';
 
 const posts = [
   {
@@ -131,8 +132,9 @@ export default function Page() {
         <img
           src="/hero-image-min.jpg"
           alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
+          className="absolute inset-0 -z-20 h-full w-full object-cover"
         />
+        <div className="absolute inset-0 -z-10 h-full w-full bg-slate-700/50"></div>
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -150,26 +152,18 @@ export default function Page() {
             <h1 className="text-4xl font-bold text-slate-50 sm:text-6xl mx-5 md:mx-0">
               I nostri spazi, il tuo divertimento
             </h1>
-            <p className="mt-6 text-md bg-slate-200/75 text-slate-900 font-light p-3.5 rounded-md mx-5 md:mx-0 sm:text-lg">
+            <p className="mt-6 text-md text-slate-100 font-medium mx-5 md:mx-0 sm:text-xl">
               Immerso nella natura, costeggiato dal Sile, a due passi da Treviso. Scarica l&apos;applicazione WanSports per prenotare la tua prossima partita!
             </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-3.5 mx-5 md:mx-0">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4 mx-5 md:mx-0">
               <div className="inline-flex">
-                <a
-                  href="https://apps.apple.com/it/app/wansport/id6445919117"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faAppStoreIos} className="mr-1.5" />
-                  Scarica da Apple Store
+                <a href="https://apps.apple.com/it/app/wansport/id6445919117">
+                  <AppStore />
                 </a>
               </div>
               <div className="inline-flex">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.wansport.community"
-                  className="rounded-md bg-sky-600 px-4 py-3.5 text-sm font-regular text-slate-50 shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                >
-                  <FontAwesomeIcon icon={faGooglePlay} className="mr-1.5" />
-                  Scarica da Google Play
+                <a href="https://play.google.com/store/apps/details?id=com.wansport.community">
+                  <GooglePlay />
                 </a>
               </div>
             </div>

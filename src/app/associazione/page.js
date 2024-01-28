@@ -105,7 +105,7 @@ export default function Page() {
               <div key={item.name}>
                 <time
                   dateTime={item.dateTime}
-                  className="flex items-center text-sm font-semibold leading-6 text-teal-800"
+                  className="flex items-center text-sm font-semibold leading-6 text-indigo-800"
                 >
                   <svg viewBox="0 0 4 4" className="mr-4 h-1 w-1 flex-none" aria-hidden="true">
                     <circle cx={2} cy={2} r={2} fill="currentColor" />
@@ -135,10 +135,10 @@ export default function Page() {
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
-                <FontAwesomeIcon icon={person.icon} className="h-16 w-16 text-teal-800 fa-2xl" aria-hidden="true" />
+                <FontAwesomeIcon icon={person.icon} className="h-16 w-16 text-indigo-800 fa-2xl" aria-hidden="true" />
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                  <p className="text-sm font-semibold leading-6 text-teal-600" style={{whiteSpace: 'pre-wrap'}}>{person.role}</p>
+                  <p className="text-sm font-semibold leading-6 text-indigo-600" style={{whiteSpace: 'pre-wrap'}}>{person.role}</p>
                 </div>
               </div>
             </li>
@@ -177,7 +177,7 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-teal-800 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
+            <div className="flex flex-col-reverse justify-between gap-x-16 gap-y-8 rounded-2xl bg-indigo-800 p-8 sm:w-11/12 sm:max-w-xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-none lg:flex-auto lg:flex-col lg:items-start lg:gap-y-28">
               <p className="flex-none text-3xl font-bold tracking-tight text-white">13</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">I nostri spazi</p>

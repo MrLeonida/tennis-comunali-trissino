@@ -66,7 +66,7 @@ export default function Page() {
               Scegliendo di aderire oggi, avrai accesso esclusivo ad una serie di vantaggi e potrai vivere la passione con noi al massimo.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-teal-800">Cos&apos;è incluso</h4>
+              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-800">Cos&apos;è incluso</h4>
               <div className="h-px flex-auto bg-gray-100" />
             </div>
             <ul
@@ -75,7 +75,7 @@ export default function Page() {
             >
               {includedFeatures.map((feature) => (
                 <li key={feature} className="flex gap-x-3">
-                  <CheckIcon className="h-6 w-5 flex-none text-teal-600" aria-hidden="true" />
+                  <CheckIcon className="h-6 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   {feature}
                 </li>
               ))}
@@ -91,7 +91,7 @@ export default function Page() {
                 </p>
                 <a
                   href="https://nazionale.dlf.it/tesseramento-ferrovieri/"
-                  className="mt-10 block w-full rounded-md bg-teal-800 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="mt-10 block w-full rounded-md bg-indigo-800 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Iscriviti ora
                 </a>
