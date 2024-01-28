@@ -6,6 +6,7 @@ import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
 import Faq from '@/components/faq';
+import Banner from '@/components/banner';
 
 const features = [
   {
@@ -77,7 +78,7 @@ export default function Page() {
       </div>
     </div>
 
-    <div className="py-24 sm:py-32 bg-slate-50">
+    <div className="pt-24 sm:pt-32 bg-slate-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-800">Karate per adulti</h2>
@@ -105,6 +106,8 @@ export default function Page() {
         </div>
       </div>
     </div>
+
+    <Banner />
 
     </main>
     
