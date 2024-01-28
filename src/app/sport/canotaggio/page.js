@@ -86,7 +86,7 @@ export default function Page() {
             Oltre le onde, una passione che vince
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Il canottaggio va oltre la competizione: è una danza sulla superficie dell'acqua che unisce mente, corpo e spirito. Scopri il nostro impegno nell&apos;esplorare nuovi orizzonti attraverso il canottaggio, dove ogni colpo di remo è un passo verso avventure e connessioni più profonde.
+            Il canottaggio va oltre la competizione: è una danza sulla superficie dell&apos;acqua che unisce mente, corpo e spirito. Scopri il nostro impegno nell&apos;esplorare nuovi orizzonti attraverso il canottaggio, dove ogni colpo di remo è un passo verso avventure e connessioni più profonde.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
