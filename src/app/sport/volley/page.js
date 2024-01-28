@@ -58,10 +58,10 @@ export default function Page() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Il volley nel cuore dell'azione DLF
+                  Il volley nel cuore dell&apos;azione DLF
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Scopri la passione e l'energia dello sport con la nostra vibrante comunità di giocatori di volley. Unisciti a noi per vivere momenti di sfida, divertimento e amicizia, dove la pallavolo diventa una vera e propria esperienza di squadra.
+                  Scopri la passione e l&apos;energia dello sport con la nostra vibrante comunità di giocatori di volley. Unisciti a noi per vivere momenti di sfida, divertimento e amicizia, dove la pallavolo diventa una vera e propria esperienza di squadra.
                 </p>
               </div>
             </div>
