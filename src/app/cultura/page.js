@@ -21,7 +21,7 @@ const highligths = [
   },
   {
     title: 'Costruendo mondi in miniatura',
-    text: 'Dalle escursioni montane alle passeggiate culturali, esploriamo insieme il mondo che ci circonda con il fermomodellismo.',
+    text: 'Sperimenta l\'arte del fermodellismo con la costruzione di plastici e la partecipazione alle nostre mostre.',
     icon: faTrain,
   },
   {
@@ -175,7 +175,7 @@ export default function Example() {
                     <span className='font-medium'>Fermodellismo:</span> 15,00€
                 </p>
                 <p className="mt-2 text-md leading-6 text-slate-100">
-                  <span className='font-medium'>Fotografica:</span> 15,00€ (ritrovo il lunedì sera)
+                  <span className='font-medium'>Fotografia:</span> 15,00€ (ritrovo il lunedì sera)
                 </p>
                 <figcaption className="mt-6 text-sm leading-6 text-slate-300 underline underline-offset-2">
                   <a href="/contatti">

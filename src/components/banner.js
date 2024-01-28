@@ -13,7 +13,7 @@ export default function Banner() {
             Diventa socio in pochi semplici click
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-            Entra a far parte della nostra famiglia: non perderti nessun dei vantaggi esclusivi e partecipa alle attività che organizziamo.
+            Entra a far parte della nostra famiglia: non perderti nessuno dei vantaggi esclusivi e partecipa alle attività che organizziamo.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
