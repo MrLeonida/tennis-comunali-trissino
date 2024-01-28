@@ -12,11 +12,11 @@ import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, f
 import Link from 'next/link';
 
 const products = [
-  { name: 'Tennis', description: 'Scendi in campo con Treviso Tennis Team', href: '/tennis', icon: faTennisBall },
-  { name: 'Canottaggio', description: 'Unisciti ad una scuola ai vertici nazionali', href: '#', icon: faWater },
-  { name: 'Calcetto', description: 'Chiama gli amici, il pallone lo mettiamo noi', href: '#', icon: faFutbol },
-  { name: 'Karate', description: 'Allaccia la cintura e sali sul tatami', href: '#', icon: faUniformMartialArts },
-  { name: 'Volley', description: 'Divertiti con la nostra squadra amatoriale', href: '#', icon: faVolleyball },
+  { name: 'Tennis', description: 'Scendi in campo con Treviso Tennis Team', href: '/sport/tennis', icon: faTennisBall },
+  { name: 'Canottaggio', description: 'Unisciti ad una scuola ai vertici nazionali', href: '/sport/canotaggio', icon: faWater },
+  { name: 'Calcetto', description: 'Chiama gli amici, il pallone lo mettiamo noi', href: '/sport/calcetto', icon: faFutbol },
+  { name: 'Karate', description: 'Allaccia la cintura e sali sul tatami', href: '/sport/karate', icon: faUniformMartialArts },
+  { name: 'Volley', description: 'Divertiti con la nostra squadra amatoriale', href: '/sport/volley', icon: faVolleyball },
 ]
 const callsToAction = [
   { name: 'Tutti gli sport', href: '/sport', icon: faMedal }
