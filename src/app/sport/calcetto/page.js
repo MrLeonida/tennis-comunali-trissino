@@ -61,7 +61,7 @@ export default function Page() {
                   Calcetto: Passione, Squadra e Competizione
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Entra in campo con il Calcetto, dove la passione per il gioco si unisce alla competizione e allo spirito di squadra. Che tu sia un calciatore esperto o stia iniziando il tuo percorso nel mondo del calcio, c'è un posto per te nella nostra squadra!
+                  Entra in campo con il Calcetto, dove la passione per il gioco si unisce alla competizione e allo spirito di squadra. Che tu sia un calciatore esperto o stia iniziando il tuo percorso nel mondo del calcio, c&apos;è un posto per te nella nostra squadra!
                 </p>
               </div>
             </div>
