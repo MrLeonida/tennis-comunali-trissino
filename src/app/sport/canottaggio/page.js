@@ -59,10 +59,10 @@ export default function Page() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Esplora il fascino del canottaggio
+                  Esplora il fascino del canottaggio
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Scopri la bellezza del canottaggio con il DLF Attraverso le onde e le acque serene, coltiviamo la passione per questo sport che unisce corpo e spirito. Partecipa alle nostre avventure remando insieme verso nuovi orizzonti.
+                  Esplora l&apos;arte del canottaggio nel nostro circolo. Con un passato glorioso, tra cui vittorie olimpiche nel 1969, e l&apos;onore della Stella al Merito CONI, incarniamo l&apos;impegno e l&apos;eccellenza nel nostro sport. Scopri con noi l&apos;emozionante connubio tra avventure sulle acque e una tradizione di successi. Prenota ora la tua lezione gratuita per unirti a questa straordinaria esperienza.
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Page() {
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="/heroCanotaggio.jpg"
+            src="/heroCanottaggio.jpg"
             alt=""
           />
         </div>

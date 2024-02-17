@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlane, faLeaf, faTrain, faCamera } from '@fortawesome/pro-solid-svg-icons'
+import { faPlane, faMasksTheater } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
@@ -10,24 +10,16 @@ import Faq from '@/components/faq';
 
 const highligths = [
   {
-    title: 'Viaggiando con passione',
-    text: 'Esplora il mondo con le nostre avvincenti gite turistiche, anche in collaborazione con Bontur Viaggi.',
+    title: 'Bontur Viaggi',
+    text: 'Una delle nostre collaborazioni storiche ed una realtà da sempre impegnata con professionalità ed entusiasmo nel mondo dei viaggi e delle vacanze, del turismo culturale, enogastronomico e religioso. Prenotando tramite la nostra segreteria, i nostri soci hanno accesso a sconti sui loro prossimi viaggi. ',
     icon: faPlane,
+    href: 'https://www.bontur.it/'
   },
   {
-    title: 'Natura ed avventura',
-    text: 'Dalle escursioni montane alle passeggiate culturali, esploriamo insieme il mondo che ci circonda.',
-    icon: faLeaf,
-  },
-  {
-    title: 'Costruendo mondi in miniatura',
-    text: 'Sperimenta l\'arte del fermodellismo con la costruzione di plastici e la partecipazione alle nostre mostre.',
-    icon: faTrain,
-  },
-  {
-    title: 'Catturando istanti, creando memorie',
-    text: 'Scopri l\'arte della fotografia attraverso corsi formativi e partecipa alle nostre emozionanti mostre.',
-    icon: faCamera,
+    title: 'Gite e mostre',
+    text: 'Ci impegniamo a promuovere offerte intertessanti dedicate a gite nelle città d\'arte oppure visite guidate a mostre e musei, arricchendo così l\'esperienza culturale dei nostri soci.',
+    icon: faMasksTheater,
+    href: ''
   }
 ]
 
@@ -89,17 +81,17 @@ export default function Example() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Esplora il mondo culturale DLF
+                    Esplorando la cultura, incontriamo il mondo: un&apos;unione per scoprire e connettersi.
                   </h1>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Nel corso degli anni, le Associazioni del Dopolavoro Ferroviario hanno organizzato eventi di rilievo nazionale, diventando un punto di riferimento nelle realtà cittadine.
+                    Le attività turistiche e culturali rappresentano un pilastro fondamentale delle iniziative promosse dal Dopolavoro Ferroviario. Questa tradizione radicata nel tempo ha favorito l&apos;incremento della partecipazione, della coesione e dell&apos;interesse da parte degli iscritti alla nostra associazione.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="/imageCultura1.jpg"
+                        src="/imageTurismo1.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -109,7 +101,7 @@ export default function Example() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="/imageCultura2.jpg"
+                        src="/imageTurismo2.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -117,7 +109,7 @@ export default function Example() {
                     </div>
                     <div className="relative">
                       <img
-                        src="/imageCultura3.jpg"
+                        src="/imageTurismo3.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -127,7 +119,7 @@ export default function Example() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="/imageCultura4.jpg"
+                        src="/imageTurismo4.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -135,7 +127,7 @@ export default function Example() {
                     </div>
                     <div className="relative">
                       <img
-                        src="/imageCultura5.jpg"
+                        src="/imageTurismo5.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -160,7 +152,7 @@ export default function Example() {
                 aria-hidden="true"
               >
                 <div
-                  className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4f46e5] to-[#0d9488] opacity-40"
+                  className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4f46e5] to-[#0284c7] opacity-40"
                   style={{
                     clipPath:
                       'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -169,13 +161,13 @@ export default function Example() {
               </div>
               <figure className="relative isolate">
                 <p className="mt-6 text-2xl font-semibold leading-10 text-white">
-                    Tariffe ed orari per i soci
+                    Convenzioni per i soci
                 </p>
                 <p className="mt-2 text-md leading-6 text-slate-100">
-                    <span className='font-medium'>Fermodellismo:</span> 15,00€
+                    <span className='font-medium'>Bontur Viaggi:</span> sconti fino dal 3% al 6%
                 </p>
                 <p className="mt-2 text-md leading-6 text-slate-100">
-                  <span className='font-medium'>Fotografia:</span> 15,00€ (ritrovo il lunedì sera)
+                  Altre convenzioni dal DLF nazionale
                 </p>
                 <figcaption className="mt-6 text-sm leading-6 text-slate-300 underline underline-offset-2">
                   <a href="/contatti">
@@ -187,30 +179,34 @@ export default function Example() {
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-teal-800">L&apos;essenza del DLF</p>
+              <p className="text-base font-semibold leading-7 text-sky-600">L'essenza del DLF</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                I valori e le attività della nostra associazione
+                Turismo e cultura per viaggiare nel tempo e nello spazio
               </h1>
               <div className="max-w-xl">
                 <p className="mt-6">
-                La cultura è un pilastro fondamentale nel DLF, con la preservazione della memoria, la prospettiva aperta sul mondo e l&apos;utilizzo della tecnologia come strumento chiave.Le attività culturali, come concorsi fotografici, competizioni letterarie e mostre, riflettono l&apos;impegno del DLF nel soddisfare le diverse esigenze dei suoi soci.
+                  La cultura è un pilastro fondamentale nel DLF, con la preservazione della memoria, la prospettiva aperta sul mondo e l'utilizzo della tecnologia come strumento chiave. L'unione con il turismo diventa, quindi, naturale: un fulcro che anima da sempre la partecipazione e l&apos;entusiasmo dei soci ferrovieri e delle loro famiglie. Un piccolo elenco delle attività che promuoviamo ogni anno:
                 </p>
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 {highligths.map((highligth) => (
                   <li key={highligth.title} className="flex gap-x-3">
-                    <FontAwesomeIcon icon={highligth.icon} className="mt-1 h-5 w-5 flex-none text-teal-800 fa-lg" />
+                    <FontAwesomeIcon icon={highligth.icon} className="mt-1 h-5 w-5 flex-none text-sky-600 fa-lg" />
                     <span>
-                      <strong className="font-semibold text-gray-900">{highligth.title}</strong>. {highligth.text}</span>
+                      <strong className="font-semibold text-gray-900">{highligth.title}</strong>. {highligth.text}
+                      {(highligth.href && highligth.href.trim() !== '') &&
+                       <a href={highligth.href} className="text-base font-semibold leading-7 text-sky-600 underline underline-offset-2">Scopri di più <span aria-hidden="true">&rarr;</span></a> 
+                      }
+                      </span>
                   </li>
                 ))}
               </ul>
                 <p className="mt-8">
-                Crediamo nel favorire la collaborazione, abbracciare la diversità e coltivare un ambiente in cui ogni membro del team prospera. Unisciti a noi mentre affrontiamo insieme il futuro del lavoro, guidati dall&apos;impegno per l&apos;innovazione, l&apos;inclusività e il successo di ciascun individuo nella nostra dinamica comunità remota.
+                  Crediamo nel favorire la collaborazione, abbracciare la diversità e coltivare un ambiente in cui ogni membro del team prospera. Così abbiamo pensato a pacchetti esclusivi, frutto di collaborazioni dirette con i nostri partner, che ci permettono di offrire esperienze impeccabili, allineate agli standard dei migliori operatori.
                 </p>
               </div>
             </div>
             <div className="mt-10 flex">
-              <a href="/associazione" className="text-base font-semibold leading-7 text-teal-800 underline underline-offset-2">
+              <a href="/associazione" className="text-base font-semibold leading-7 text-sky-600 underline underline-offset-2">
                 Approfondisci la nostra realtà <span aria-hidden="true">&rarr;</span>
               </a>
             </div>

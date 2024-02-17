@@ -12,16 +12,16 @@ const features = [
   {
     name: 'Forza e agilità in armonia',
     description: 'Partecipa alle nostre lezioni di karate per migliorare la tua forza, agilità e coordinazione. Con un focus sulla disciplina personale e sul rispetto, il Karate DLF offre un ambiente stimolante per crescere sia fisicamente che mentalmente.',
-    icon: faHandsClapping,
-  },
-  {
-    name: 'Insegnanti esperti: guida e ispirazione',
-    description: 'Contiamo su istruttori esperti nel Karate DLF, dedicati a guidarti nel tuo percorso. Con anni di esperienza, i nostri insegnanti sono qui per ispirare, correggere e motivare, garantendo che tu raggiunga il massimo delle tue potenzialità.',
     icon: faUniformMartialArts,
   },
   {
+    name: 'Sicurezza personale al primo posto',
+    description: 'Con il nostro focus dedicato sull\'autodifesa, ti offriamo un corso mirato a fornirti abilità pratiche per affrontare situazioni potenzialmente pericolose.',
+    icon: faHandsClapping,
+  },
+  {
     name: 'In cammino con i tuoi compagni',
-    description: 'Unisciti a una comunità di appassionati di karate che condividono il tuo impegno. Le lezioni sono un\'opportunità non solo per migliorare le tue abilità ma anche per connetterti con altri appassionati, creando legami e sostegno reciproco.',
+    description: 'Contiamo su istruttori esperti nel Karate e nell’autodifesa, dedicati a guidarti nel tuo percorso. Con anni di esperienza, i nostri insegnanti sono qui per ispirare, correggere e motivare, garantendo che tu raggiunga il massimo delle tue potenzialità.',
     icon: faUserFriends,
   }
 ]
@@ -59,10 +59,10 @@ export default function Page() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Karate: L&apos;Arte Marziale del DLF
+                  Karate: l&apos;arte marziale del DLF
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Esplora il Karate DLF, un percorso che va oltre le mosse, abbracciando la forza mentale e fisica attraverso la pratica dell&apos;antica arte marziale. Unisciti a noi per allenarti e crescere in una comunità dedicata alla disciplina e al rispetto.
+                  Scopri il mondo del Karate DLF abbracciando la crescita personale attraverso l&apos;antica arte marziale. Partecipa ai nostri corsi per coltivare la forza mentale e fisica. Aggiungi un livello di sicurezza con il nostro corso di autodifesa, rendendo il tuo percorso ancora più completo e versatile.
                 </p>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function Page() {
     <div className="pt-24 sm:pt-32 bg-slate-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-800">Karate per adulti</h2>
+          <h2 className="text-base font-semibold leading-7 text-indigo-800">Karate e autodifesa per adulti</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Potenzia il tuo corpo e la tua sicurezza
           </p>

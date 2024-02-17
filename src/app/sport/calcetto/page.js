@@ -10,13 +10,13 @@ import Banner from '@/components/banner';
 
 const features = [
   {
-    name: 'Allenamenti professionali',
-    description: 'Partecipa ai nostri allenamenti per migliorare le tue capacità nel calcetto. I nostri istruttori esperti ti guideranno attraverso esercizi mirati e strategie di gioco.',
+    name: 'WanSport: la tua app per il calcetto',
+    description: 'Prenota il tuo campo preferito in pochi clic e resta sempre aggiornato sugli orari disponibili. Con WanSport, hai il controllo completo del tuo gioco, il tutto a portata di mano.',
     icon: faFutbol,
   },
   {
-    name: 'Competizioni agonistiche e amichevoli',
-    description: 'Prendi parte alle nostre competizioni e mettiti alla prova contro i migliori giocatori della zona. Affronta sfide avvincenti, mostra le tue abilità e competi per la gloria sul campo da calcetto.',
+    name: 'Porta la tua squadra',
+    description: 'Vivi l\'entusiasmo del calcetto con la tua squadra e crea ricordi indelebili sul campo. Cosa c\'è di meglio che condividere la passione con i tuoi amici?',
     icon: faWreathLaurel,
   },
   {
@@ -59,10 +59,10 @@ export default function Page() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Calcetto: Passione, Squadra e Competizione
+                  Calcetto: passione, divertimento e competizione
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Entra in campo con il Calcetto, dove la passione per il gioco si unisce alla competizione e allo spirito di squadra. Che tu sia un calciatore esperto o stia iniziando il tuo percorso nel mondo del calcio, c&apos;è un posto per te nella nostra squadra!
+                  Entra in campo con il calcetto, dove la passione per il gioco si unisce alla competizione ed allo spirito di squadra. Che tu sia un calciatore esperto o stia iniziando il tuo percorso nel mondo del calcio, c&apos;è un posto per te in campo!
                 </p>
               </div>
             </div>
@@ -83,10 +83,10 @@ export default function Page() {
         <div className="mx-auto max-w-3xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-800">Vivi l&apos;adrenalina</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Eleva il tuo gioco al prossimo livello
+            Scendi in campo con WanSport
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Affina le tue abilità e migliora la tua tecnica con i nostri allenamenti dedicati. Il Calcetto non è solo competizione, ma anche un&apos;opportunità per crescere come giocatore. Sotto la guida di allenatori esperti, potrai perfezionare il tuo stile di gioco e acquisire nuove competenze che faranno la differenza sul campo.
+            Nel nostro circolo conta la tua voglia di divertirti e di condividere momenti di sport e allegria con gli amici. Scegli la libertà di giocare, prenota la tua partita con WanSport e unisciti a noi sul campo!
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

@@ -10,20 +10,20 @@ import Banner from '@/components/banner';
 
 const features = [
   {
-    name: 'Livello agonista',
-    description: 'Partecipa agli allenamenti, consigliato e seguito da maestri qualificati e certificati FIT. Affina le tue abilità e migliora i tuoi colpi. Con la tua determinazione e il tuo impegno, potrai raggiungere traguardi importanti e giocare nel campionato regionale con una delle squadre della Treviso Tennis Team.',
-    icon: faTennisBall,
-  },
-  {
-    name: 'Livello principiante',
-    description: 'Fai una prova con uno dei nostri maestri, saprà indicarti il gruppo più adatto al tuo livello di gioco. Ogni giorno sono disponibili lezioni di gruppo entry level e medium level, per migliorare le tue capacità e insegnarti tutte le nozioni a livello tecnico-tattico.',
-    icon: faRacquet,
-  },
-  {
     name: 'Gioca con gli amici',
     description: 'Prenota il campo tramite l’app dedicata Wansport e vieni a giocare con i tuoi amici. E se non trovi il tuo compagno, cerca una partita aperta e unisciti! In poco tempo troverai nuovi appassionati di tennis come te e potrai dar vita a sfide emozionanti nel segno della competitività e dell’amicizia.',
     icon: faUserFriends,
-  }
+  },
+  {
+    name: 'Livello principiante',
+    description: 'Fai una prova con uno dei nostri maestri, saprà indicarti il gruppo più adatto al tuo livello di gioco. Ogni giorno sono disponibili lezioni di gruppo entry level e medium level, per migliorare le tue capacità e insegnarti tutte le nozioni a livello tecnico-tattico. In collaborazione con Treviso Tennis Team.',
+    icon: faRacquet,
+  },
+  {
+    name: 'Livello agonista',
+    description: 'Partecipa agli allenamenti, consigliato e seguito da maestri qualificati e certificati FIT. Affina le tue abilità e migliora i tuoi colpi. Con la tua determinazione e il tuo impegno, potrai raggiungere traguardi importanti e giocare nel campionato regionale. In collaborazione con Treviso Tennis Team.',
+    icon: faTennisBall,
+  },
 ]
 
 function classNames(...classes) {
@@ -59,10 +59,10 @@ export default function Page() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Unisciti a noi e sfida i tuoi amici
+                  Svela il tuo talento: prenota il tuo campo da tennis
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Esplora la passione e la vitalità del tennis con la nostra dinamica comunità di giocatori. Unisciti a noi per condividere momenti di competizione, divertimento e compagnia, dove il tennis diventa un&apos;esperienza collettiva indimenticabile.
+                  Esplora la passione del tennis nei nostri quattro campi in terra rossa, di cui tre coperti, e un campo in erba sintetica. Prenota il tuo campo e lasciati trasportare dalla passione del gioco!
                 </p>
               </div>
             </div>
@@ -83,10 +83,10 @@ export default function Page() {
         <div className="mx-auto max-w-3xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-800">Impugna la racchetta</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            I maestri ti aspettano, vieni a provare!
+            Gli altri giocatori ti aspettano, vieni a provare!
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            La nostra comunità di tennisti ti invita calorosamente ad unirti alle nostre coinvolgenti sessioni di pratica e partecipare ai tornei sociali che danno vita ad emozionanti match. Con un&apos;atmosfera accogliente e un impegno condiviso per il divertimento, i nostri campi da tennis diventano il luogo ideale per sviluppare le tue capacità sportive e organizzare le tue partite in amicizia. Che tu sia un principiante o un giocatore agonista, troverai il tuo posto nel nostro mondo tennistico. <strong>In collaborazione con Treviso Tennis Team.</strong>
+            Abbiamo una folta comunità di tennisti che danno vita ad emozionanti match. Con un&apos;atmosfera accogliente e un impegno condiviso per il divertimento, i nostri campi da tennis diventano il luogo ideale per sviluppare le tue capacità sportive e organizzare le tue partite in amicizia. Che tu sia un principiante o un giocatore agonista, troverai il tuo posto nel nostro mondo tennistico.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

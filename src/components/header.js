@@ -8,15 +8,15 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMedal, faMountain } from '@fortawesome/pro-solid-svg-icons'
+import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMedal, faSpa } from '@fortawesome/pro-solid-svg-icons'
 import Link from 'next/link';
 
 const products = [
-  { name: 'Tennis', description: 'Scendi in campo con Treviso Tennis Team', href: '/sport/tennis', icon: faTennisBall },
-  { name: 'Canottaggio', description: 'Unisciti ad una scuola ai vertici nazionali', href: '/sport/canotaggio', icon: faWater },
-  { name: 'Escursionismo', description: 'Escursioni e ferrate con il gruppo Geam', href: '/sport/escursionismo', icon: faMountain },
+  { name: 'Canottaggio', description: 'Unisciti ad una scuola ai vertici nazionali', href: '/sport/canottaggio', icon: faWater },
+  { name: 'Tennis', description: 'Affitta un campo e divertiti con gli amici', href: '/sport/tennis', icon: faTennisBall },
+  { name: 'Ginnastica', description: 'Corsi di pilates, tonificazione e tanto altro', href: '/sport/ginnastica', icon: faSpa },
   { name: 'Calcetto', description: 'Chiama gli amici, il pallone lo mettiamo noi', href: '/sport/calcetto', icon: faFutbol },
-  { name: 'Karate', description: 'Allaccia la cintura e sali sul tatami', href: '/sport/karate', icon: faUniformMartialArts },
+  { name: 'Karate e difesa personale', description: 'Allaccia la cintura e sali sul tatami', href: '/sport/karate', icon: faUniformMartialArts },
   { name: 'Volley', description: 'Divertiti con la nostra squadra amatoriale', href: '/sport/volley', icon: faVolleyball },
 ]
 const callsToAction = [
@@ -143,14 +143,14 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="/turismo" className="text-sm font-semibold leading-6 text-slate-900">
-            Turismo
+          <a href="/turismo-e-cultura" className="text-sm font-semibold leading-6 text-slate-900">
+            Turismo e cultura
           </a>
-          <a href="/cultura" className="text-sm font-semibold leading-6 text-slate-900">
-            Cultura
+          <a href="/attivita-e-gruppi" className="text-sm font-semibold leading-6 text-slate-900">
+            Attività e gruppi
           </a>
-          <a href="/servizi" className="text-sm font-semibold leading-6 text-slate-900">
-            Servizi
+          <a href="/spazi-e-servizi" className="text-sm font-semibold leading-6 text-slate-900">
+            Spazi e servizi
           </a>
 
 
@@ -160,7 +160,7 @@ export default function Header() {
           <Popover.Group>
             <Popover className="relative">
               <Popover.Button className="flex items-center gap-x-1.5 text-sm font-semibold leading-6 text-slate-900">
-                Prenota con l&apos;app
+                Prenota
                 <FontAwesomeIcon icon={faChevronDown} className="fa-sm text-slate-400" />
               </Popover.Button>
               <Popover.Panel className="absolute right-0 top-full z-10 mt-3 w-56 rounded-xl bg-slate-50 p-2 shadow-lg ring-1 ring-gray-900/5">
@@ -249,22 +249,22 @@ export default function Header() {
                 </Disclosure>
 
                 <a
-                  href="/turismo"
+                  href="/turismo-e-cultura"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-gray-50"
                 >
-                  Turismo
+                  Turismo e cultura
                 </a>
                 <a
-                  href="/cultura"
+                  href="/attivita-e-gruppi"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-gray-50"
                 >
-                  Cultura
+                  Attività e gruppi
                 </a>
                 <a
-                  href="/servizi"
+                  href="/spazi-e-servizi"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-gray-50"
                 >
-                  Servizi
+                  Spazi e servizi
                 </a>
 
                 
@@ -274,7 +274,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Prenota con l&apos;app
+                        Prenota
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"

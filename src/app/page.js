@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedal, faTrain, faMasksTheater, faFamily } from '@fortawesome/pro-solid-svg-icons'
+import { faMedal, faTrain, faFamily, faMountain } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
@@ -17,34 +17,34 @@ const posts = [
     href: '/sport',
     description: 'Da sempre inteso come attività ludica e di intrattenimento per eccellenza, lo sport costituisce un momento importante di formazione, di benessere fisico e di aggregazione.',
     imageUrl: '/imageHomeSport.jpg',
-    classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-amber-500 group-hover:bg-amber-400',
+    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-amber-500 group-hover:bg-amber-400',
     icon: faMedal,
   },
   {
     id: 2,
-    title: 'Turismo',
-    href: '/turismo',
-    description: 'Il turismo è un punto di forza delle attività del Dopolavoro Ferroviario. Una tradizione storica che ha visto crescere la partecipazione, l’aggregazione e l’entusiasmo dei soci ferrovieri e non solo.',
+    title: 'Turismo e cultura',
+    href: '/turismo-e-cultura',
+    description: 'Le attività turistiche e culturali sono un punto di forza della proposta del Dopolavoro Ferroviario. Una tradizione storica che ha visto crescere la partecipazione, l’aggregazione e l’entusiasmo dei soci ferrovieri e non solo.',
     imageUrl: '/imageHomeTurismo.jpg',
-    classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-500 group-hover:bg-blue-400',
+    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-blue-500 group-hover:bg-blue-400',
     icon: faTrain,
   },
   {
     id: 3,
-    title: 'Cultura',
-    href: '/cultura',
-    description: 'La conservazione della memoria comune, la visione del mondo come spazio aperto, la tecnica vissuta come strumento ma non come fine, questo è il nostro approccio verso le attività culturali.',
-    imageUrl: '/imageHomeCultura.jpg',
-    classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-emerald-500 group-hover:bg-emerald-400',
-    icon: faMasksTheater,
+    title: 'Attività e gruppi',
+    href: '/attivita-e-gruppi',
+    description: 'Esplora, cattura, crea: unisciti ai nostri gruppi tematici di escursionismo, fotografia e fermodellismo e scopri un mondo di passioni condivise e legami duraturi.',
+    imageUrl: '/imageHomeGruppi.jpg',
+    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-teal-500 group-hover:bg-teal-400',
+    icon: faMountain,
   },
   {
     id: 4,
-    title: 'Servizi',
-    href: '/servizi',
+    title: 'Spazi e servizi',
+    href: '/spazi-e-servizi',
     description: 'Il settore dei servizi è indispensabile per assolvere alla finalità del DLF, esso permette di offrire spazi ed opportunità ai soci mettendo a loro disposizione gli strumenti necessari allo sviluppo.',
     imageUrl: '/imageHomeServizi.jpg',
-    classes: 'flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-red-500 group-hover:bg-red-400',
+    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-red-500 group-hover:bg-red-400',
     icon: faFamily,
   },
 ]
@@ -122,7 +122,7 @@ export default function Page() {
       <div className="relative h-80 overflow-hidden bg-indigo-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
         <img
           className="h-full w-full object-cover"
-          src="/heroAssociazione.jpg"
+          src="/imageHomeAssociazione.jpg"
           alt=""
         />
         <div className="absolute inset-0 z-10 h-full w-full bg-slate-700/50"></div>
@@ -151,7 +151,7 @@ export default function Page() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Una vasta scelta di attività</h2>
           <p className="mt-5 text-lg leading-8 text-gray-600">
-            Sport, turismo, cultura, turismo...e tu quale scegli?
+            Siamo orgogliosi di presentare un ricco programma di attività sportive che spazia da una vasta gamma di discipline, garantendo divertimento e sfida per tutti i livelli di abilità. Ma non è tutto: la nostra offerta va oltre lo sport, con entusiasmanti attività turistiche e culturali che ti consentono di esplorare luoghi affascinanti e scoprire nuove passioni. Inoltre, i nostri gruppi tematici offrono un ambiente stimolante per incontrare persone con interessi simili e condividere esperienze uniche. E per rendere l'esperienza ancora più gratificante, offriamo un mondo di convenzioni e servizi esclusivi che ti consentono di risparmiare e di godere di vantaggi speciali in diverse attività e negozi. Entra a far parte della nostra associazione e scopri un mondo di opportunità e divertimento che ti aspetta!
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-4">

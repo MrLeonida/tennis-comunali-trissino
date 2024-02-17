@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVolleyball, faMedal, faUserGroupSimple } from '@fortawesome/pro-solid-svg-icons'
+import { faVolleyball, faUserGroupSimple, faGoalNet } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
@@ -10,19 +10,19 @@ import Banner from '@/components/banner';
 
 const features = [
   {
-    name: 'Formazione tecnica specializzata',
-    description: 'Approfitta delle nostre sessioni di formazione mirate, guidate da allenatori esperti. Affina le tue abilità di palleggio, schiacciata e difesa mentre ti immergi in un ambiente supportivo e appassionato.',
+    name: 'Campo di pallavolo: la tua arena di gioco',
+    description: 'Scopri il nostro campo di pallavolo, il luogo dove la passione prende vita. Un\'arena dove sfidarsi, divertirsi e vivere l\'intensità di questo sport.',
     icon: faVolleyball,
   },
   {
-    name: 'Competizioni entusiasmanti',
-    description: 'Partecipa alle nostre emozionanti competizioni interne e esterne. Sfida te stesso e fai crescere la tua esperienza di gioco, creando momenti memorabili sul campo da volley insieme alla nostra squadra.',
-    icon: faMedal,
+    name: 'Unisciti alla nostra famiglia pallavolistica',
+    description: 'Entra a far parte della nostra squadra amatoriale, dove l\'amicizia è la base della competizione. Condividiamo momenti di gioco, allenamento e spirito di squadra.',
+    icon: faUserGroupSimple,
   },
   {
-    name: 'Spirito di squadra ed amicizia',
-    description: 'Oltre al campo, coltiva amicizie solide e uno spirito di squadra che va al di là del gioco. Condividi momenti indimenticabili fuori dal campo, rafforzando i legami con i tuoi compagni di squadra e creando ricordi che dureranno una vita.',
-    icon: faUserGroupSimple,
+    name: 'Prenota il campo: gioca con libertà',
+    description: 'Hai la possibilità di prenotare il campo quando vuoi. Organizza partite spontanee o programmate, mettiti alla prova e goditi la tua passione per la pallavolo senza limiti.',
+    icon: faGoalNet,
   }
 ]
 
@@ -62,7 +62,7 @@ export default function Page() {
                   Il volley nel cuore dell&apos;azione DLF
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Scopri la passione e l&apos;energia dello sport con la nostra vibrante comunità di giocatori di volley. Unisciti a noi per vivere momenti di sfida, divertimento e amicizia, dove la pallavolo diventa una vera e propria esperienza di squadra.
+                  Scopri la passione e l&apos;energia della pallavolo con noi. Unisciti al nostro circolo per vivere momenti di sfida, divertimento e amicizia, dove lo sport diventa una vera e propria esperienza.
                 </p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Page() {
             Gioca, impara e vivi l&apos;entusiasmo con noi!
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            La nostra squadra di appassionati atleti ti invita a unirti alle nostre sessioni di allenamento coinvolgenti e a partecipare a emozionanti partite. Con un&apos;atmosfera accogliente e un impegno comune per il divertimento, il nostro campo da volley diventa il luogo ideale per coltivare le tue abilità sportive e creare legami duraturi. Sia che tu sia un principiante o un giocatore esperto, troverai la tua dimensione nella nostra squadra di volley DLF.
+            Scopri l&apos;entusiasmante mondo della pallavolo DLF, dove la passione per lo sport si fonde con l&apos;amicizia e il divertimento. La nostra squadra amatoriale è pronta ad accoglierti per qualche partita amichevole, creando un ambiente informale e divertente.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

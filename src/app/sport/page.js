@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMountain } from '@fortawesome/pro-solid-svg-icons'
+import { faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faDumbbell } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
@@ -10,22 +10,22 @@ import Faq from '@/components/faq';
 
 const highligths = [
   {
+    title: 'Canottaggio',
+    text: 'Riconosciuto a livello nazionale, la struttura dispone di palestra per pesistica, vasca voga coperta oltre a tutte le attrezzature per le uscite su acqua. I corsi sono disponibili a partire dai 12 anni ed offriamo una lezione gratuita. ',
+    icon: faWater,
+    href: '/sport/canottaggio',
+  },
+  {
     title: 'Tennis',
     text: 'La struttura conta 4 campi in terra rossa, di cui 3 coperti, ed un campo in erba sintetica. Avrai la possibilità di giocare prenotando in qualsiasi momento tramite l’app dedicata Wansport. ',
     icon: faTennisBall,
     href: '/sport/tennis',
   },
   {
-    title: 'Canottaggio',
-    text: 'Riconosciuto a livello nazionale, la struttura dispone di palestra per pesistica, vasca voga coperta oltre a tutte le attrezzature per le uscite su acqua. I corsi sono disponibili a partire dai 12 anni. ',
-    icon: faWater,
-    href: '/sport/canotaggio',
-  },
-  {
-    title: 'Escursionismo',
-    text: 'Il gruppo Geam pianifica, con cadenza bisettimanale, escursioni e ferrate nei luoghi più belli delle nostre Alpi. ',
-    icon: faMountain,
-    href: '/sport/escursionismo',
+    title: 'Ginnastica',
+    text: 'Unisciti alla nostra missione per promuovere il benessere attraverso l\'attività fisica, dove ogni movimento è un passo verso una vita più sana e attiva. ',
+    icon: faDumbbell,
+    href: '/sport/ginnastica',
   },
   {
     title: 'Calcetto',
@@ -34,7 +34,7 @@ const highligths = [
     href: '/sport/calcetto',
   },
   {
-    title: 'Karate',
+    title: 'Karate e difesa personale',
     text: 'Vengono organizzati corsi per adulti presso la nostra palestra, ti aspettiamo! ',
     icon: faUniformMartialArts,
     href: '/sport/karate',
@@ -111,10 +111,10 @@ export default function Example() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Sport: uno stile di vita
+                    Lo sport come stile di vita
                   </h1>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    Lo sport, da sempre ritenuto un&apos;esperienza ricreativa e coinvolgente, riveste un ruolo fondamentale per stimolare la crescita personale, il benessere fisico e la socializzazione.
+                    L'attività sportiva, da sempre ritenuta un&apos;esperienza ricreativa e coinvolgente, riveste un ruolo fondamentale per stimolare la crescita personale, il benessere fisico e la socializzazione. Noi lo sappiamo ed il nostro impegno in questa direzione garantisce ai nostri soci l'accesso ad attività divertenti e strutturate.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -194,7 +194,7 @@ export default function Example() {
                   Tariffe ed orari per i soci
                 </p>
                 <p className="mt-2 text-md leading-6 text-slate-100">
-                  Vedere le pagine specifiche degli sport
+                  Vedere le pagine specifiche di ciascuno sport
                 </p>
                 <figcaption className="mt-6 text-sm leading-6 text-slate-300 underline underline-offset-2">
                   <a href="/contatti">
@@ -228,7 +228,7 @@ export default function Example() {
                 ))}
               </ul>
                 <p className="mt-8">
-                  In aggiunta è possibile seguire corsi di difesa personale per donne e misti; c’è la possibilità di accedere alle nostre due palestre per corsi di ginnastica quali tonificazione, pilates, gag, body tonic; si possono prenotare sessioni di atletica propedeutica al gioco del tennis; sono presenti quattro piste regolamentari per giocare a bocce.
+                  Che tu sia un principiante o un atleta esperto, troverai qualcosa che fa per te, dalle classiche discipline a opzioni più specializzate come pilates e arti marziali. I nostri istruttori qualificati sono qui per guidarti e motivarti lungo il tuo percorso sportivo. Unisciti a noi e vivi lo spirito di squadra, la competizione amichevole e il divertimento dello sport!
                 </p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTree, faLocationPin, faHouseTree } from '@fortawesome/pro-solid-svg-icons'
+import { faWavePulse, faHeart, faShirtRunning } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
@@ -10,19 +10,19 @@ import Banner from '@/components/banner';
 
 const features = [
   {
-    name: 'Passione per la natura',
-    description: 'Il GEAM si distingue per la sua comunità di ferrovieri appassionati di montagna. Gestito da un Comitato Tecnico, il gruppo organizza settimanalmente diverse escursioni, adattandosi alle esigenze e ai livelli di esperienza dei partecipanti.',
-    icon: faTree,
+    name: 'Pilates per l\'equilibrio corporeo',
+    description: 'Scopri il benessere con i nostri corsi di Pilates, concentrati sul potenziamento del "core" e sull\'armonia tra corpo e mente.',
+    icon: faHeart,
   },
   {
-    name: 'Il punto di ritrovo',
-    description: 'Ogni giovedì, il GEAM si ritrova presso la sede sociale del D.L.F., diventando un punto di aggregazione per i soci. Qui, si svolgono periodiche proiezioni di diapositive, creando un ambiente coinvolgente per gli amanti della montagna.',
-    icon: faLocationPin,
+    name: 'GAG: fitness divertente',
+    description: 'Divertiti mentre ti alleni con i corsi GAG, un mix di ginnastica, aerobica e giochi per migliorare resistenza e coordinazione.',
+    icon: faShirtRunning,
   },
   {
-    name: 'Casa vivaio',
-    description: 'Il GEAM gestisce con dedizione la "Casa Vivaio", un rifugio situato sopra Tambre, con 16 posti letto. Oltre a diventare un luogo di ritrovo, la casa ospita una settimana dedicata ai ragazzi con escursioni e attività culturali, promuovendo la conoscenza e il rispetto dell\'ambiente naturale.',
-    icon: faHouseTree,
+    name: 'Tonificazione per modellare il tuo corpo',
+    description: 'Scolpisci l\'addome e brucia calorie con i corsi di tonificazione e aerotone, progettati per migliorare la forma fisica generale.',
+    icon: faWavePulse,
   }
 ]
 
@@ -59,10 +59,10 @@ export default function Page() {
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Esplora la natura: escursionismo con passione
+                  Vivi attivamente con la ginnastica DLF
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Benvenuto nella nostra sezione dedicata all&apos;escursionismo, un&apos;opportunità emozionante per connettersi con la natura e scoprire scenari mozzafiato. Unisciti a noi nelle nostre avventure all&apos;aria aperta, esplorando sentieri panoramici e vivendo esperienze indimenticabili immersi nella bellezza della natura.
+                  Immergiti in un mondo di salute con noi! Unisciti alla nostra missione per promuovere il benessere attraverso l&apos;attività fisica, dove ogni movimento è un passo verso una vita più sana e attiva.
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Page() {
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="/heroEscursionismo.jpg"
+            src="/heroGinnastica.jpg"
             alt=""
           />
         </div>
@@ -81,17 +81,12 @@ export default function Page() {
     <div className="pt-24 sm:pt-32 bg-slate-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-800">Amore per la montagna</h2>
+          <h2 className="text-base font-semibold leading-7 text-indigo-800">Riscopri il tuo potenziale</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Esplorando le vette: la storia affascinante del GEAM
+            La formula vincente per il tuo benessere
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Nella vibrante atmosfera degli anni &apos;70, un gruppo di ferrovieri condivise la passione per la montagna, dando vita al GEAM. Nonostante gli inizi informali, la passione comune per la natura selvaggia e le vette incontaminate li guidò a formare ufficialmente il gruppo nel 1979. Il GEAM cresceva come una famiglia di amici, accomunati dalla gioia di esplorare le Dolomiti e le valli circostanti. Nel corso degli anni, il GEAM ha adottato nuove tecnologie per organizzare escursioni e documentare le avventure, ma l&apos;amore per la montagna rimane inalterato. Il gruppo ha attraversato generazioni, trasmettendo la passione ai figli e ai nipoti, garantendo una continuità che riflette il rispetto eterno per la maestosità della natura.
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            <a href="/associazione" className="text-indigo-600 underline underline-offset-2">
-              Vai al sito del GEAM <span aria-hidden="true">&rarr;</span>
-            </a>
+            Esplora la nostra ricca varietà di corsi di ginnastica, un&apos;invito a riscoprire la tua vitalità. Dalle pratiche orientate al benessere come il Pilates, ai ritmi energici del GAG, fino alla tonificazione e all&apos;aerotone, troverai il supporto perfetto per plasmare il tuo corpo e rafforzare la tua connessione con la salute e l&apos;equilibrio. Vieni al DLF per scoprire questo percorso verso uno stile di vita attivo e dinamico.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
