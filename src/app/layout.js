@@ -7,8 +7,8 @@ config.autoAddCss = false
 const fontFamily = Poppins({ weight: ['100','200','300','400','500','600','700','800','900'], subsets: ['latin'] })
 
 export const metadata = {
-  title: '[Staging] Associazione DLF Treviso Belluno',
-  description: '[Staging] Associazione DLF Treviso Belluno',
+  title: 'Associazione DLF Treviso Belluno',
+  description: 'Associazione DLF Treviso Belluno',
 }
 
 export default function RootLayout({ children }) {
