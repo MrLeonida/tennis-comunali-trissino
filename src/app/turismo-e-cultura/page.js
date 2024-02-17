@@ -179,13 +179,13 @@ export default function Example() {
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-sky-600">L'essenza del DLF</p>
+              <p className="text-base font-semibold leading-7 text-sky-600">L&apos;essenza del DLF</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Turismo e cultura per viaggiare nel tempo e nello spazio
               </h1>
               <div className="max-w-xl">
                 <p className="mt-6">
-                  La cultura è un pilastro fondamentale nel DLF, con la preservazione della memoria, la prospettiva aperta sul mondo e l'utilizzo della tecnologia come strumento chiave. L'unione con il turismo diventa, quindi, naturale: un fulcro che anima da sempre la partecipazione e l&apos;entusiasmo dei soci ferrovieri e delle loro famiglie. Un piccolo elenco delle attività che promuoviamo ogni anno:
+                  La cultura è un pilastro fondamentale nel DLF, con la preservazione della memoria, la prospettiva aperta sul mondo e l&apos;utilizzo della tecnologia come strumento chiave. L&apos;unione con il turismo diventa, quindi, naturale: un fulcro che anima da sempre la partecipazione e l&apos;entusiasmo dei soci ferrovieri e delle loro famiglie. Un piccolo elenco delle attività che promuoviamo ogni anno:
                 </p>
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 {highligths.map((highligth) => (

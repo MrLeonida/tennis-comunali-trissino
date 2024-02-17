@@ -114,7 +114,7 @@ export default function Example() {
                     Lo sport come stile di vita
                   </h1>
                   <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    L'attività sportiva, da sempre ritenuta un&apos;esperienza ricreativa e coinvolgente, riveste un ruolo fondamentale per stimolare la crescita personale, il benessere fisico e la socializzazione. Noi lo sappiamo ed il nostro impegno in questa direzione garantisce ai nostri soci l'accesso ad attività divertenti e strutturate.
+                    L&apos;attività sportiva, da sempre ritenuta un&apos;esperienza ricreativa e coinvolgente, riveste un ruolo fondamentale per stimolare la crescita personale, il benessere fisico e la socializzazione. Noi lo sappiamo ed il nostro impegno in questa direzione garantisce ai nostri soci l&apos;accesso ad attività divertenti e strutturate.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
