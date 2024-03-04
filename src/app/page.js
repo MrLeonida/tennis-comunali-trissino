@@ -1,52 +1,19 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedal, faTrain, faFamily, faMountain } from '@fortawesome/pro-solid-svg-icons'
+import { faBuildings, faClock, faPhone, faEnvelope } from '@fortawesome/pro-solid-svg-icons'
 import Header from '@/components/header';
 import Warning from '@/components/warning';
 import Footer from '@/components/footer';
 import AppStore from '@/components/appStore';
 import GooglePlay from '@/components/googlePlay';
-import Banner from '@/components/banner';
-import Faq from '@/components/faq';
 
-const posts = [
-  {
-    id: 1,
-    title: 'Sport',
-    href: '/sport',
-    description: 'Da sempre inteso come attività ludica e di intrattenimento per eccellenza, lo sport costituisce un momento importante di formazione, di benessere fisico e di aggregazione.',
-    imageUrl: '/imageHomeSport.jpg',
-    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-amber-500 group-hover:bg-amber-400',
-    icon: faMedal,
-  },
-  {
-    id: 2,
-    title: 'Turismo e cultura',
-    href: '/turismo-e-cultura',
-    description: 'Le attività turistiche e culturali sono un punto di forza della proposta del Dopolavoro Ferroviario. Una tradizione storica che ha visto crescere la partecipazione, l’aggregazione e l’entusiasmo dei soci ferrovieri e non solo.',
-    imageUrl: '/imageHomeTurismo.jpg',
-    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-blue-500 group-hover:bg-blue-400',
-    icon: faTrain,
-  },
-  {
-    id: 3,
-    title: 'Attività e gruppi',
-    href: '/attivita-e-gruppi',
-    description: 'Esplora, cattura, crea: unisciti ai nostri gruppi tematici di escursionismo, fotografia e fermodellismo e scopri un mondo di passioni condivise e legami duraturi.',
-    imageUrl: '/imageHomeGruppi.jpg',
-    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-teal-500 group-hover:bg-teal-400',
-    icon: faMountain,
-  },
-  {
-    id: 4,
-    title: 'Spazi e servizi',
-    href: '/spazi-e-servizi',
-    description: 'Il settore dei servizi è indispensabile per assolvere alla finalità del DLF, esso permette di offrire spazi ed opportunità ai soci mettendo a loro disposizione gli strumenti necessari allo sviluppo.',
-    imageUrl: '/imageHomeServizi.jpg',
-    classes: 'flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-red-500 group-hover:bg-red-400',
-    icon: faFamily,
-  },
+
+const stats = [
+  { id: 1, name: 'Campi in terra rossa', value: '2' },
+  { id: 2, name: 'Campi in sintetico', value: '1' },
+  { id: 3, name: 'Maestri', value: '3' },
+  { id: 4, name: 'Tesserati', value: '50+' },
 ]
 
 function classNames(...classes) {
@@ -62,7 +29,7 @@ export default function Page() {
     
     <Header />
 
-      <div className="relative isolate overflow-hidden pt-14">
+    <div className="relative isolate overflow-hidden pt-14">
         <img
           src="/heroHome.jpg"
           alt=""
@@ -84,10 +51,10 @@ export default function Page() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-slate-50 sm:text-6xl mx-5 md:mx-0">
-              I nostri spazi, il tuo divertimento
+              Il tennis è scuola di vita
             </h1>
             <p className="mt-6 text-md text-slate-100 font-medium mx-5 md:mx-0 sm:text-xl">
-              Immerso nella natura, costeggiato dal Sile, a due passi da Treviso. Scarica l&apos;applicazione WanSports per prenotare la tua prossima partita!
+              Organizziamo corsi di tennis per adulti e ragazzi. La prima lezione è gratuita, vieni a provare!
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4 mx-5 md:mx-0">
               <div className="inline-flex">
@@ -122,70 +89,185 @@ export default function Page() {
       <div className="relative h-80 overflow-hidden bg-indigo-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
         <img
           className="h-full w-full object-cover"
-          src="/imageHomeAssociazione.jpg"
+          src="/heroTennis.jpg"
           alt=""
         />
         <div className="absolute inset-0 z-10 h-full w-full bg-slate-700/50"></div>
       </div>
       <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-          <h2 className="text-base font-semibold leading-7 text-indigo-400">Solidità, dinamismo e crescita</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Una storia centenaria fatta di impegno, collettività ed esperienze</p>
+          <h2 className="text-base font-semibold leading-7 text-indigo-400">I nostri valori, dentro e fuori dal campo</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Scuola tennis per avviamento, perfezionamento, pre-agonistica e agonistica</p>
           <p className="mt-6 text-base leading-7 text-gray-300">
-            Attraverso iniziative sportive, culturali, e ricreative, miriamo a potenziare l&apos;utilizzo del tempo libero, migliorare le condizioni di crescita culturale e sociale degli iscritti, e favorire l&apos;armonizzazione della vita associativa attraverso lo scambio di valori ed esperienze, coinvolgendo non solo gli associati ma anche le loro famiglie.
+            Perchè il tennis è uno sport dove si cresce imparando il valore delle regole, è una scuola di vita che insegna a lottare nel rispetto dell'avversario e dei tuoi compagni. Perchè vuol dire passione ma può trasformarsi, un giorno, in una vera e propria professione.<br />Perchè Tennis Comunali Trissino è sempre più polo del tennis/padel vicentino, schierando uno staff in cui professionalità e competenza sono le parole d'ordine.<br />Perché ogni giorno scendiamo in campo per far si che i sogni diventino realtà o, più semplicemente, mettendo a disposizione il nostro bagaglio di competenze tecniche e le nostre qualità umane, per far crescere gli uomini e le donne di domani.
           </p>
-          <div className="mt-8">
-            <a
-              href="/associazione"
-              className="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Approfondisci la nostra realtà
-            </a>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:max-w-none">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Il nostro polo sportivo
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+             Superfici diverse per creare un ambiente unico e stimolante per giocatori di tutti i livelli, dalle partite amichevoli agli allenamenti intensi. Inoltre, i nostri maestri possono vantare anni di esperienza nel campo e una passione contagiosa per lo sport. Con il loro bagaglio tecnico saranno in grado di aiutarti a migliorare le tue abilità, affinare la tua tecnica e raggiungere i tuoi obiettivi di gioco. Che tu sia un principiante in cerca di apprendimento o un giocatore esperto in cerca di perfezionamento, i nostri maestri saranno al tuo fianco in ogni fase del tuo viaggio tennistico.
+            </p>
+          </div>
+          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
+                <dt className="text-sm font-semibold leading-6 text-gray-600">{stat.name}</dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </div> 
+
+    
+    <div className="relative isolate bg-white">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-slate-100 lg:w-1/2">
+            </div>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Rimani in contatto</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Per contattarci o avere ulteriori informazioni, potrei scegliere di telefonare oppure scrivere una mail al nostro indirizzo o utilizzare i nostri canali social. Ti forniremo una risposta nel più breve tempo possibile.
+            </p>
+            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Dove siamo</span>
+                  <FontAwesomeIcon icon={faBuildings} className="text-slate-600 fa-lg" />
+                </dt>
+                <dd>
+                  <span className='font-semibold'>Dove siamo</span>
+                  <br />
+                  Via Palladio, 24
+                  <br />
+                  36070 Trissino (VI)
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Telefono</span>
+                  <FontAwesomeIcon icon={faPhone} className="text-slate-600 fa-lg" />
+                </dt>
+                <dd>
+                  <span className='font-semibold'>Per chiamarci</span>
+                  <br />
+                  <a className="hover:text-gray-900 underline underline-offset-2" href="tel:+39 320 8080670">
+                    +39 320 8080670
+                  </a>
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Email</span>
+                  <FontAwesomeIcon icon={faEnvelope} className="text-slate-600 fa-lg" />
+                </dt>
+                <dd>
+                  <span className='font-semibold'>Per scriverci</span>
+                  <br />
+                  <a className="hover:text-gray-900 underline underline-offset-2" href="mailto:dlftreviso@dlf.it">
+                    info@tenniscomunalitrissino.it
+                  </a>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
-      </div>
-    </div>
-
-      <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Una vasta scelta di attività</h2>
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-            Siamo orgogliosi di presentare un ricco programma di attività sportive che spazia da una vasta gamma di discipline, garantendo divertimento e sfida per tutti i livelli di abilità. Ma non è tutto: la nostra offerta va oltre lo sport, con entusiasmanti attività turistiche e culturali che ti consentono di esplorare luoghi affascinanti e scoprire nuove passioni. Inoltre, i nostri gruppi tematici offrono un ambiente stimolante per incontrare persone con interessi simili e condividere esperienze uniche. E per rendere l&apos;esperienza ancora più gratificante, offriamo un mondo di convenzioni e servizi esclusivi che ti consentono di risparmiare e di godere di vantaggi speciali in diverse attività e negozi. Entra a far parte della nostra associazione e scopri un mondo di opportunità e divertimento che ti aspetta!
-          </p>
-        </div>
-        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-4">
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-56 sm:pt-40 lg:pt-56"
-            >
-              <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
-              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-              <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-              <a className="absolute inset-0 z-10" href={post.href}></a>
-              <div className="flex flex-wrap items-center gap-x-2.5 overflow-hidden text-sm leading-6 text-gray-300">
-                <div className={post.classes}>
-                  <FontAwesomeIcon icon={post.icon} className="h-6 w-6 text-slate-50 fa-lg" aria-hidden="true" />
-                </div>
-                <div className="text-lg font-bold text-slate-50">
-                {post.title}
+        <form action="#" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Nome
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autoComplete="given-name"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
                 </div>
               </div>
-              <h3 className="mt-3 text-sm font-light leading-6 text-slate-50">
-                {post.description}
-              </h3>
-            </article>
-          ))}
-        </div>
+              <div>
+                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Cognome
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autoComplete="family-name"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Email
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="email"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Numero di telefono
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    autoComplete="tel"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                  Messaggio
+                </label>
+                <div className="mt-2.5">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows={4}
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    defaultValue={''}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 flex justify-end">
+              <button
+                type="submit"
+                className="rounded-md bg-indigo-800 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Invia il messaggio
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-
-    <Banner />
-
-    <Faq />
-
-    <Footer />
 
     <Warning />
 
