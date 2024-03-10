@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   Bars3Icon,
@@ -9,26 +9,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faTennisBall, faWater, faFutbol, faUniformMartialArts, faVolleyball, faMedal, faSpa } from '@fortawesome/pro-solid-svg-icons'
-import Link from 'next/link';
 
-const products = [
-  { name: 'Canottaggio', description: 'Unisciti ad una scuola ai vertici nazionali', href: '/sport/canottaggio', icon: faWater },
-  { name: 'Tennis', description: 'Affitta un campo e divertiti con gli amici', href: '/sport/tennis', icon: faTennisBall },
-  { name: 'Ginnastica', description: 'Corsi di pilates, tonificazione e tanto altro', href: '/sport/ginnastica', icon: faSpa },
-  { name: 'Calcetto', description: 'Chiama gli amici, il pallone lo mettiamo noi', href: '/sport/calcetto', icon: faFutbol },
-  { name: 'Karate e difesa personale', description: 'Allaccia la cintura e sali sul tatami', href: '/sport/karate', icon: faUniformMartialArts },
-  { name: 'Volley', description: 'Divertiti con la nostra squadra amatoriale', href: '/sport/volley', icon: faVolleyball },
-]
-const callsToAction = [
-  { name: 'Tutti gli sport', href: '/sport', icon: faMedal }
-]
-const company = [
-  { name: 'Treviso e Belluno', href: '/associazione' },
-  { name: 'Nazionale', href: 'https://nazionale.dlf.it/' },
-  { name: 'Diventa socio', href: '/socio' },
-  { name: 'News', href: '#' },
-  { name: 'Contatti', href: '/contatti' },
-]
 const app = [
   { name: 'App Store', href: 'https://apps.apple.com/it/app/wansport/id6445919117' },
   { name: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.wansport.community' },
