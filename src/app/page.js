@@ -23,7 +23,6 @@ export default function Page() {
 
   async function handleSubmit(event) {
     const formData = new FormData(event.target)
-    console.log(formData)
     try {
         const response = await fetch('/api/contact', {
             method: 'post',
