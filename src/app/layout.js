@@ -8,7 +8,7 @@ const fontFamily = Poppins({ weight: ['100','200','300','400','500','600','700',
 
 export const metadata = {
   title: 'Tennis Comunali Trissino',
-  description: 'Tennis Comunali Trissino',
+  description: 'Sito web del Tennis Comunali Trissino.',
 }
 
 export default function RootLayout({ children }) {
