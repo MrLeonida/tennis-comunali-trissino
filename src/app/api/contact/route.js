@@ -33,10 +33,11 @@ export async function POST(request) {
             replyTo: email,
             subject: `Richiesta di informazioni dal sito web www.tenniscomunalitrissino.it`,
             html: `
-            <p>Name: ${name}</p><br />
-            <p>Cognome: ${surname}</p><br />
-            <p>Telefono: ${phone} </p><br />
-            <p>E-mail: ${email} </p><br /><br />
+            <p>Name: ${name}</p>
+            <p>Cognome: ${surname}</p>
+            <p>Telefono: ${phone} </p>
+            <p>E-mail: ${email} </p>
+
             <p>Messaggio: ${message} </p>
             `,
         })
