@@ -37,7 +37,6 @@ export async function POST(request) {
             <p>Cognome: ${surname}</p>
             <p>Telefono: ${phone} </p>
             <p>E-mail: ${email} </p>
-
             <p>Messaggio: ${message} </p>
             `,
         })

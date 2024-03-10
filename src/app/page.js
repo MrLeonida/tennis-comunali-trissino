@@ -23,6 +23,7 @@ export default function Page() {
 
   async function handleSubmit(event) {
     const formData = new FormData(event.target)
+    console.log(formData)
     try {
         const response = await fetch('/api/contact', {
             method: 'post',
@@ -193,7 +194,7 @@ export default function Page() {
                 <dd>
                   <span className="font-semibold text-sky-900">Per scriverci</span>
                   <br />
-                  <a className="hover:text-slate-900 underline underline-offset-2" href="mailto:dlftreviso@dlf.it">
+                  <a className="hover:text-slate-900 underline underline-offset-2" href="mailto:info@tenniscomunalitrissino.it">
                     info@tenniscomunalitrissino.it
                   </a>
                 </dd>
