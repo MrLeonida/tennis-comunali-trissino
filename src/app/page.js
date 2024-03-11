@@ -6,13 +6,15 @@ import Header from '@/components/header';
 import Warning from '@/components/warning';
 import AppStore from '@/components/appStore';
 import GooglePlay from '@/components/googlePlay';
+import Footer from '@/components/footer';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
 const stats = [
   { id: 1, name: 'Campi in terra rossa con struttura fissa', value: '2' },
   { id: 2, name: 'Campi in erba sintetica con struttura fissa (anche calcetto)', value: '2' },
-  { id: 3, name: 'Tesserati adulti e ragazzi, amatori ed agonisti', value: '50+' },
-  { id: 4, name: 'Maestri qualificati con certificazioni FIT', value: 'Staff' },
+  { id: 3, name: 'Campo in superficie Play-It scoperto', value: '1' },
+  { id: 4, name: 'Tesserati adulti e ragazzi, amatori ed agonisti', value: '50+' },
 ]
 
 function classNames(...classes) {
@@ -132,7 +134,7 @@ export default function Page() {
               Il nostro polo sportivo
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-             Superfici diverse per creare un ambiente unico e stimolante per giocatori di tutti i livelli, dalle partite amichevoli agli allenamenti intensi. Inoltre, i nostri maestri possono vantare anni di esperienza nel campo ed una passione contagiosa per lo sport. Con il loro bagaglio tecnico saranno in grado di aiutarti a migliorare le tue abilità, affinare la tua tecnica e raggiungere i tuoi obiettivi di gioco. Che tu sia un principiante in cerca di apprendimento oppure un giocatore esperto in cerca di perfezionamento, i nostri maestri saranno al tuo fianco in ogni fase del tuo viaggio tennistico.
+             Superfici diverse per creare un ambiente unico e stimolante per giocatori di tutti i livelli, dalle partite amichevoli agli allenamenti intensi. Inoltre, i nostri maestri possono vantare anni di esperienza nel campo, <b>certificazioni di livello FITP</b> ed una passione contagiosa per lo sport. Con il loro bagaglio tecnico saranno in grado di aiutarti a migliorare le tue abilità, affinare la tua tecnica e raggiungere i tuoi obiettivi di gioco. Che tu sia un principiante in cerca di apprendimento oppure un giocatore esperto in cerca di perfezionamento, i nostri maestri saranno al tuo fianco in ogni fase del tuo viaggio tennistico.
             </p>
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
@@ -195,6 +197,19 @@ export default function Page() {
                   <br />
                   <a className="hover:text-slate-900 underline underline-offset-2" href="mailto:info@tenniscomunalitrissino.it">
                     info@tenniscomunalitrissino.it
+                  </a>
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Social</span>
+                  <FontAwesomeIcon icon={faFacebook} className="text-sky-900 fa-lg" />
+                </dt>
+                <dd>
+                  <span className="font-semibold text-sky-900">Facebook</span>
+                  <br />
+                  <a className="hover:text-slate-900 underline underline-offset-2" href="https://www.facebook.com/TennisClubTrissino">
+                    Tennis Comunali Trissino
                   </a>
                 </dd>
               </div>
@@ -287,6 +302,8 @@ export default function Page() {
         </form>
       </div>
     </div>
+  
+    <Footer />
 
     <Warning />
 
