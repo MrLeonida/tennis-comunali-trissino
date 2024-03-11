@@ -6,7 +6,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 const navigation = [
   {
     name: 'Facebook',
-    href: 'https://www.facebook.com/TennisClubTrissino',
+    href: 'https://www.facebook.com/p/Tennis-Comunali-Trissino-100091829936615/',
     icon: faFacebook
   }
 ]

@@ -208,7 +208,7 @@ export default function Page() {
                 <dd>
                   <span className="font-semibold text-sky-900">Facebook</span>
                   <br />
-                  <a className="hover:text-slate-900 underline underline-offset-2" href="https://www.facebook.com/TennisClubTrissino">
+                  <a className="hover:text-slate-900 underline underline-offset-2" href="https://www.facebook.com/p/Tennis-Comunali-Trissino-100091829936615/">
                     Tennis Comunali Trissino
                   </a>
                 </dd>
