@@ -1,13 +1,18 @@
 "use client";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const navigation = [
   {
     name: 'Facebook',
     href: 'https://www.facebook.com/p/Tennis-Comunali-Trissino-100091829936615/',
     icon: faFacebook
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/tenniscomunalitrissino/',
+    icon: faInstagram
   }
 ]
 

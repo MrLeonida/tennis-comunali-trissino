@@ -7,7 +7,7 @@ import Warning from '@/components/warning';
 import AppStore from '@/components/appStore';
 import GooglePlay from '@/components/googlePlay';
 import Footer from '@/components/footer';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 const stats = [
@@ -202,13 +202,26 @@ export default function Page() {
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <span className="sr-only">Social</span>
+                  <span className="sr-only">Facebook</span>
                   <FontAwesomeIcon icon={faFacebook} className="text-sky-900 fa-lg" />
                 </dt>
                 <dd>
                   <span className="font-semibold text-sky-900">Facebook</span>
                   <br />
                   <a className="hover:text-slate-900 underline underline-offset-2" href="https://www.facebook.com/p/Tennis-Comunali-Trissino-100091829936615/">
+                    Tennis Comunali Trissino
+                  </a>
+                </dd>
+              </div>
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
+                  <span className="sr-only">Instagram</span>
+                  <FontAwesomeIcon icon={faInstagram} className="text-sky-900 fa-lg" />
+                </dt>
+                <dd>
+                  <span className="font-semibold text-sky-900">Instagram</span>
+                  <br />
+                  <a className="hover:text-slate-900 underline underline-offset-2" href="https://www.instagram.com/tenniscomunalitrissino/">
                     Tennis Comunali Trissino
                   </a>
                 </dd>
